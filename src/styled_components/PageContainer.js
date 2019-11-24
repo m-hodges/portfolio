@@ -5,4 +5,6 @@ export default styled.div`
     height: 100vh;
     background-color: #373737
     display:  ${props => props.grid ? "grid" : "block"}
+    grid-gap: 50px 100px;
+    grid-template-columns: auto 35%;
 `
