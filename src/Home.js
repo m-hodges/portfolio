@@ -1,6 +1,6 @@
 import React from 'react';
 
-import PageContainer from './styled_components/PageContainer'
+import { PageContainer } from './styled_components/Containers'
 
 const Home = () => {
     return (
