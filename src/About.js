@@ -7,7 +7,7 @@ import {
 const About = () => {
     return (
         <PageGridContainer>
-            <div style={{gridRow: 1 / 1}}>
+            <div style={{gridArea: "about"}}>
                 <h1>About Me</h1>
                 <p>
                     Quaerat sint quas voluptatibus. Animi est blanditiis omnis doloribus laboriosam placeat. Cum ratione quibusdam fugiat ut. Quae perferendis qui non ut. Sint quasi pariatur eum quia qui tempora dignissimos aliquid.
@@ -21,13 +21,13 @@ const About = () => {
                     Officia iusto placeat quis aut. Enim sunt voluptatem eligendi enim libero laboriosam soluta. Rerum sapiente veritatis dolorum tempora aut pariatur. Voluptatibus consequatur quia odio.
                 </p>
             </div>
-            <div style={{gridRow: 2 / 1}}>
+            <div style={{gridArea: "contact"}}>
                 <h2>Contact</h2>
             </div>
-            <div style={{gridRow: 3 / 1}}>
+            <div style={{gridArea: "cv"}}>
                 <h2>CV</h2>
             </div>
-            <div style={{gridArea: 1 / 2 / 3 / 2 }}>
+            <div style={{gridArea: "skills"}}>
                 <h2>Skills</h2>
             </div>
         </PageGridContainer>
