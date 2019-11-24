@@ -30,19 +30,27 @@ const About = () => {
                 </div>
             </GridItem>
             <GridItem contact>
-                <h2>
-                    Contact
-                    <hr/>
-                </h2>
-                <p>
-                    <a href="https://github.com/m-hodges">Github</a>
-                </p>
-                <p>
-                    <a href="https://www.linkedin.com/in/michael-hodges-124089b4">LinkedIn</a>
-                </p>
-                <p>
-                    <a href="mailto: michaelcshodges@gmail.com">Email</a>
-                </p>
+                <div>
+                    {/* <h2>
+                        Contact */}
+                        <hr/>
+                    {/* </h2> */}
+                </div>
+                <div style={{display: "flex", justifyContent: "space-between", padding: "40px 40px"}}>
+                    <a href="https://github.com/m-hodges">
+                        <img src='/icons/github-brands.svg' alt='Github'></img>
+                    </a>
+                    <a href="https://www.linkedin.com/in/michael-hodges-124089b4">
+                        <img src='/icons/linkedin-brands.svg' alt='LinkedIn'></img>
+                    </a>
+                    <a href="mailto: michaelcshodges@gmail.com">
+                        <img src='/icons/envelope-solid.svg' alt='Email'></img>
+                    </a>
+                    {/* eslint-disable-next-line */}
+                    <a href="#">
+                        <img src='/icons/file-pdf-solid.svg' alt='CV'></img>
+                    </a>
+                </div>
             </GridItem>
             <GridItem cv>
                 <h2>

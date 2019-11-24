@@ -27,3 +27,9 @@ h2 {
   display: inline-block;
   margin-bottom: 20px;
 }
+
+img {
+  width: 125px;
+  height: 125px;
+  color: pink;
+}
