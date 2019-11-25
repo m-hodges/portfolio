@@ -37,19 +37,20 @@ const About = () => {
                     {/* </h2> */}
                 </div>
                 <div style={{display: "flex", justifyContent: "space-between", padding: "40px 40px"}}>
-                    <a href="https://github.com/m-hodges">
+                    <a href="https://github.com/m-hodges" target="_blank" rel="noopener noreferrer">
                         <img src='/icons/github-brands.svg' alt='Github'></img>
                     </a>
-                    <a href="https://www.linkedin.com/in/michael-hodges-124089b4">
+                    <a href="https://www.linkedin.com/in/michael-hodges-124089b4" target="_blank" rel="noopener noreferrer">
                         <img src='/icons/linkedin-brands.svg' alt='LinkedIn'></img>
                     </a>
-                    <a href="mailto: michaelcshodges@gmail.com">
-                        <img src='/icons/envelope-solid.svg' alt='Email'></img>
-                    </a>
                     {/* eslint-disable-next-line */}
-                    <a href="#">
+                    <a href="#" target="_blank" rel="noopener noreferrer">
                         <img src='/icons/file-pdf-solid.svg' alt='CV'></img>
                     </a>
+                    <a href="mailto: michaelcshodges@gmail.com" target="_blank" rel="noopener noreferrer">
+                        <img src='/icons/envelope-solid.svg' alt='Email'></img>
+                    </a>
+
                 </div>
             </GridItem>
             <GridItem cv>
