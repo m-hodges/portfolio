@@ -7,7 +7,7 @@ const PageContainer = styled.div`
 `
 const PageFlexContainer = styled(PageContainer)`
     display: flex;
-    justify-content: space-evenly;
+    justify-content: center;
     align-items: center;
     flex-direction: column;
     text-align: center;
