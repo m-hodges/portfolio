@@ -39,7 +39,7 @@ const About = () => {
                         <img src='/icons/linkedin-brands.svg' alt='LinkedIn'></img>
                     </a>
                     {/* eslint-disable-next-line */}
-                    <a href="#" target="_blank" rel="noopener noreferrer">
+                    <a href="/other/mhodges_cv.pdf" target="_blank" rel="noopener noreferrer">
                         <img src='/icons/file-pdf-solid.svg' alt='CV'></img>
                     </a>
                     <a href="mailto: michaelcshodges@gmail.com" target="_blank" rel="noopener noreferrer">

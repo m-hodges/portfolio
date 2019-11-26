@@ -29,7 +29,6 @@ const GridItem = styled.div`
     grid-area: ${props => 
         props.about ? "about" 
         : props.contact ? "contact" 
-        : props.cv ? "cv" 
         : "skills" }
         ;
 `
