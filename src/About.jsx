@@ -7,7 +7,7 @@ import {
 
 const About = () => {
     return (
-        <PageGridContainer>
+        <PageGridContainer id='aboutPage'>
             <GridItem about>
                 <div>
                     <h1>

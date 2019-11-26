@@ -12,6 +12,10 @@ const Home = () => {
             <h3 style={{float: "right"}}>Creativity</h3>
             </div>
             <h2>Fullstack Web Developer</h2>
+            <a href="#aboutPage">
+                <img src='/icons/caret-down-solid.svg' alt='To About Page'></img>
+            </a>
+            {/* bug: makes page load in about page */}
         </PageFlexContainer>
     );
 };
