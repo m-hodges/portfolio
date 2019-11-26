@@ -3,7 +3,7 @@ import React from 'react';
 import { 
     PageGridContainer,
     GridItem
-} from './styled_components/Containers'
+} from './styles/styled_components/Containers'
 
 const About = () => {
     return (
@@ -52,7 +52,6 @@ const About = () => {
                     <h1>Skills</h1>
                 </div>
                 <div>
-
                 </div>
             </GridItem>
         </PageGridContainer>

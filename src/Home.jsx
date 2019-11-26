@@ -1,6 +1,6 @@
 import React from 'react';
 
-import { PageFlexContainer } from './styled_components/Containers'
+import { PageFlexContainer } from './styles/styled_components/Containers'
 
 const Home = () => {
     return (

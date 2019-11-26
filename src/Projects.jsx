@@ -1,6 +1,6 @@
 import React from 'react';
 
-import { PageContainer } from './styled_components/Containers'
+import { PageContainer } from './styles/styled_components/Containers'
 
 const Projects = () => {
     return (
