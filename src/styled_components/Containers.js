@@ -5,6 +5,13 @@ const PageContainer = styled.div`
     height: 100vh;
     background-color: #F8F9FC
 `
+const PageFlexContainer = styled(PageContainer)`
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+`
 
 const PageGridContainer = styled(PageContainer)`
     display: grid;
@@ -29,6 +36,7 @@ const GridItem = styled.div`
 
 export { 
     PageContainer,
+    PageFlexContainer,
     PageGridContainer,
     GridItem
 }
