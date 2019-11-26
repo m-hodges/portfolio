@@ -10,11 +10,10 @@ const PageGridContainer = styled(PageContainer)`
     display: grid;
     grid-gap: 50px 100px;
     grid-template-columns: auto 40%;
-    grid-template-rows: 50% 25% auto;
+    grid-template-rows: 65% auto;
     grid-template-areas:
         'about      skills'
         'contact    skills'
-        'cv         skills'
         ;
 `
 

@@ -30,12 +30,7 @@ const About = () => {
                 </div>
             </GridItem>
             <GridItem contact>
-                <div>
-                    {/* <h2>
-                        Contact */}
-                        <hr/>
-                    {/* </h2> */}
-                </div>
+                <hr/>
                 <div style={{display: "flex", justifyContent: "space-between", padding: "40px 40px"}}>
                     <a href="https://github.com/m-hodges" target="_blank" rel="noopener noreferrer">
                         <img src='/icons/github-brands.svg' alt='Github'></img>
@@ -50,14 +45,7 @@ const About = () => {
                     <a href="mailto: michaelcshodges@gmail.com" target="_blank" rel="noopener noreferrer">
                         <img src='/icons/envelope-solid.svg' alt='Email'></img>
                     </a>
-
                 </div>
-            </GridItem>
-            <GridItem cv>
-                <h2>
-                    Curriculum Vitae
-                    <hr/>
-                </h2>
             </GridItem>
             <GridItem skills>
                 <div style={{display: 'flex', justifyContent: 'center'}}>
