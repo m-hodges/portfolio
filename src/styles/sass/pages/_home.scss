@@ -1,0 +1,15 @@
+.title {
+    width: 100vw;
+    height: 25vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    &--text {
+        margin: 0;
+        &__center {
+            font-size: 100px;
+            font-weight: 700;
+            margin: 0vh 4vw 4vh 4vw;
+        }
+    }
+}

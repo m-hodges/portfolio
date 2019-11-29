@@ -1,14 +1,9 @@
-//typography and color
-//@mixin text($font-stack, $color) {
-// font: $font-stack;
-// color: $color
-// }
-
 @mixin title {
     font-family: $title-font-stack;
     font-weight: 900;
     font-size: 72px;
-    color: $title-font-color; 
+    color: $title-font-color;
+    display: inline-block;
 }
 
 @mixin subtitle {
@@ -16,4 +11,5 @@
     font-weight: 700;
     font-size: 50px;
     color: $title-font-color;
+    display: inline-block;
 }
