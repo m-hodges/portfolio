@@ -1,5 +1,7 @@
 import React from 'react';
 
+import ExpandMoreIcon from '@material-ui/icons/ExpandMore';
+
 import { PageFlexContainer } from './styles/styled_components/Containers'
 
 const Home = () => {
@@ -18,9 +20,9 @@ const Home = () => {
                 <p className='subtitle--text subtitle--text__sub'>Fullstack Web Developer</p>
             </div>
             <a href="#aboutPage">
-                <img src='/icons/caret-down-solid.svg' alt='To About Page'></img>
+                <ExpandMoreIcon/>
             </a>
-            {/* bug: makes page load in about page */}
+            {/* bug: makes page load in about page - componentdidmount reset page position? */}
         </PageFlexContainer>
     );
 };
