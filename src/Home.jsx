@@ -22,7 +22,7 @@ const Home = () => {
             </div>
             <div className='spacer spacer--container'>
                 <a href="#aboutPage">
-                    <ExpandMoreIcon/>
+                    <ExpandMoreIcon fontSize='large'/>
                 </a>
             </div>
             {/* bug: makes page load in about page - componentdidmount reset page position? */}
