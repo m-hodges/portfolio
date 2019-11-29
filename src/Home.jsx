@@ -10,10 +10,12 @@ const Home = () => {
                 <h1 className="title--text__center"> | </h1>
                 <h1 className="title--text">Innovative</h1>
             </div>
-            <div>
-                <p>Michael Hodges</p>
-                <hr/>
-                <p>Fullstack Web Developer</p>
+            <div className='subtitle'>
+                <p className='subtitle--text'>
+                    Michael Hodges
+                    <hr/>
+                </p>
+                <p className='subtitle--text'>Fullstack Web Developer</p>
             </div>
             <a href="#aboutPage">
                 <img src='/icons/caret-down-solid.svg' alt='To About Page'></img>

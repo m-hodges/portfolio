@@ -1,9 +1,7 @@
 .title {
     width: 100vw;
     height: 25vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    @include centerFlexContainer(row);
     &--text {
         margin: 0;
         &__center {
@@ -11,5 +9,15 @@
             font-weight: 700;
             margin: 0vh 4vw 4vh 4vw;
         }
+    }
+}
+
+.subtitle {
+    width: 100vw;
+    height: 25vh;
+    @include centerFlexContainer(column);
+    background-color: pink;
+    &--text {
+        // display: inline-block;
     }
 }

@@ -5,6 +5,7 @@ const PageContainer = styled.div`
     height: 100vh;
     background-color: #F8F9FC
 `
+
 const PageFlexContainer = styled(PageContainer)`
     display: flex;
     justify-content: center;

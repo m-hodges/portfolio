@@ -1,15 +1,14 @@
-@mixin title {
-    font-family: $title-font-stack;
-    font-weight: 900;
-    font-size: 72px;
-    color: $title-font-color;
+@mixin heading ($weight, $size) {
+    font-weight: $weight;
+    font-size: $size;
+    font-family: $heading-font-stack;
+    color: $heading-font-color;
     display: inline-block;
 }
 
-@mixin subtitle {
-    font-family: $title-font-stack;
-    font-weight: 700;
-    font-size: 50px;
-    color: $title-font-color;
-    display: inline-block;
+@mixin centerFlexContainer ($flexDirection) {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: $flexDirection;
 }
