@@ -29,3 +29,12 @@
         margin: 10px 0px 6px 0px;
     }
 }
+
+.spacer {
+    width: 100vw;
+    height: 27.5vh;
+    // background-color: pink;
+    &--container {
+        @include centerFlexContainer(column);
+    }
+}

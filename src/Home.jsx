@@ -7,6 +7,7 @@ import { PageFlexContainer } from './styles/styled_components/Containers'
 const Home = () => {
     return (
         <PageFlexContainer>
+            <div className='spacer'></div>
             <div className="title">
                 <h1 className="title--text">Functional</h1>
                 <h1 className="title--text__center"> | </h1>
@@ -19,9 +20,11 @@ const Home = () => {
                 </p>
                 <p className='subtitle--text subtitle--text__sub'>Fullstack Web Developer</p>
             </div>
-            <a href="#aboutPage">
-                <ExpandMoreIcon/>
-            </a>
+            <div className='spacer spacer--container'>
+                <a href="#aboutPage">
+                    <ExpandMoreIcon/>
+                </a>
+            </div>
             {/* bug: makes page load in about page - componentdidmount reset page position? */}
         </PageFlexContainer>
     );
