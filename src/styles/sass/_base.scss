@@ -13,4 +13,13 @@ h2 {
 
 p {
     font-family: $body-font-stack;
+    font-size: 24px;
+}
+
+hr {
+    margin: 0;
+    border: none;
+    color: #1E1E1E;
+    background-color: #1E1E1E;
+    height: 2px;
 }

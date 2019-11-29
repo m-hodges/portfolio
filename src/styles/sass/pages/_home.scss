@@ -14,10 +14,18 @@
 
 .subtitle {
     width: 100vw;
-    height: 25vh;
+    height: 20vh;
     @include centerFlexContainer(column);
-    background-color: pink;
     &--text {
-        // display: inline-block;
+        margin: 0;
+        &__main {
+            font-size: 32px;
+        }
+        &__sub {
+            font-size: 19px;
+        }
+    }
+    &--separator {
+        margin: 10px 0px 6px 0px;
     }
 }
