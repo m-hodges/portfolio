@@ -5,6 +5,10 @@ import ExpandMoreIcon from '@material-ui/icons/ExpandMore';
 import { PageFlexContainer } from './styles/styled_components/Containers'
 
 const Home = () => {
+    const state = {
+        isDisplayed: false
+    }
+
     return (
         <PageFlexContainer>
             <div className='spacer'></div>
@@ -24,6 +28,7 @@ const Home = () => {
                 <a href="#aboutPage" className='continue'>
                     <ExpandMoreIcon fontSize='large'/>
                 </a>
+                {/* {this.state.isDisplayed && <p className='scroll'>Scroll</p>} */}
             </div>
             {/* bug: makes page load in about page - componentdidmount reset page position? */}
         </PageFlexContainer>

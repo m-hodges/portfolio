@@ -41,3 +41,13 @@
 .continue:hover {
     color: gray;
 }
+
+.scroll {
+    font-family: Roboto;
+    font-size: 12px;
+    font-weight: 500;
+    display: none;
+    &:hover {
+        display: block;
+    }
+}

@@ -11,7 +11,7 @@ import './styles/sass/_app.scss'
 function App() {
   return (
     <>
-      <CssBaseline />
+      < CssBaseline />
       < Home />
       < About />
       < Projects />
