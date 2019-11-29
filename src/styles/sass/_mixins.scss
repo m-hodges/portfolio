@@ -3,3 +3,17 @@
 // font: $font-stack;
 // color: $color
 // }
+
+@mixin title {
+    font-family: $title-font-stack;
+    font-weight: 900;
+    font-size: 72px;
+    color: $title-font-color; 
+}
+
+@mixin subtitle {
+    font-family: $title-font-stack;
+    font-weight: 700;
+    font-size: 50px;
+    color: $title-font-color;
+}

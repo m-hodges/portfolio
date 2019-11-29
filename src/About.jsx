@@ -10,10 +10,10 @@ const About = () => {
         <PageGridContainer id='aboutPage'>
             <GridItem about>
                 <div>
-                    <h1>
+                    <h2>
                         About Me
                         <hr/>
-                    </h1>
+                    </h2>
                 </div>
                 <div>
                     <p>
