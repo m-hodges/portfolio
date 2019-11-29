@@ -21,7 +21,7 @@ const Home = () => {
                 <p className='subtitle--text subtitle--text__sub'>Fullstack Web Developer</p>
             </div>
             <div className='spacer spacer--container'>
-                <a href="#aboutPage">
+                <a href="#aboutPage" className='continue'>
                     <ExpandMoreIcon fontSize='large'/>
                 </a>
             </div>
