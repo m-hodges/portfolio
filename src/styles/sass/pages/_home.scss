@@ -33,7 +33,6 @@
 .spacer {
     width: 100vw;
     height: 27.5vh;
-    // background-color: pink;
     &--container {
         @include centerFlexContainer(column);
     }
