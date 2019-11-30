@@ -9,9 +9,17 @@ const PageContainer = styled.div`
 const PageFlexContainer = styled(PageContainer)`
     display: flex;
     justify-content: center;
-    align-items: center;
+    align-items: ${props => 
+        props.left ? "flex-start"
+        : props.right ? "flex-end"
+        : "center"
+    };;
     flex-direction: column;
-    text-align: center;
+    text-align: ${props => 
+        props.left ? "left"
+        : props.right ? "right"
+        : "center"
+    };
 `
 
 const PageGridContainer = styled(PageContainer)`
