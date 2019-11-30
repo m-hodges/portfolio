@@ -5,15 +5,15 @@ import ExpandMoreIcon from '@material-ui/icons/ExpandMore';
 import { PageFlexContainer } from './styles/styled_components/Containers'
 
 class Home extends Component {
-    state = {
-        isDisplayed: true
-    }
+    // state = {
+    //     isDisplayed: true
+    // }
     
-    evt = () => {
-        (this.state.isDisplayed) 
-        ? this.setState({ isDisplayed: false })
-        : this.setState({ isDisplayed: true })
-    }
+    // evt = () => {
+    //     (this.state.isDisplayed) 
+    //     ? this.setState({ isDisplayed: false })
+    //     : this.setState({ isDisplayed: true })
+    // }
 
     render () {
         return (
@@ -32,9 +32,9 @@ class Home extends Component {
                     <p className='subtitle--text subtitle--text__sub'>Fullstack Web Developer</p>
                 </div>
                 <div className='spacer spacer--container'>
-                    <a href="#aboutPage" className='continue' onMouseOver={this.evt} onMouseOut={this.evt}>
-                        {this.state.isDisplayed && <ExpandMoreIcon fontSize='large'/>}
-                        {!this.state.isDisplayed && <p className='scroll'>About</p>}
+                    <a href="#aboutPage" className='continue' >
+                            <ExpandMoreIcon fontSize='large' className='icon'/>
+                            {/* {!this.state.isDisplayed && <p className='about'>About</p>}  */}
                     </a>
                 </div>
                 {/* bug: makes page load in about page - componentdidmount reset page position? */}
