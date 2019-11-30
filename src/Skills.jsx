@@ -15,6 +15,9 @@ const About = () => {
                 <p> 
                     Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras orci diam, aliquet porttitor viverra ac, congue et purus. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam aliquam augue in sodales rhoncus. Proin vitae leo sit amet mi pulvinar varius in ac turpis. Sed pretium eros rhoncus, tristique augue id, dignissim dolor.
                 </p>
+                <div className="skills--icons">
+                    
+                </div>
             </div>
         </PageFlexContainer>
     );

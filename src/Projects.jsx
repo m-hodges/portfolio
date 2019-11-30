@@ -1,12 +1,15 @@
 import React from 'react';
 
-import { PageContainer } from './styles/styled_components/Containers'
+import { PageFlexContainer } from './styles/styled_components/Containers'
 
 const Projects = () => {
     return (
-        <PageContainer>
-            <h1>This is the projects page</h1>
-        </PageContainer>
+        <PageFlexContainer style={{justifyContent: 'flex-start'}}>
+            <h2>
+                Projects
+                <hr />
+            </h2>
+        </PageFlexContainer>
     );
 };
 

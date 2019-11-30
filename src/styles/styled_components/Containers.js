@@ -13,7 +13,7 @@ const PageFlexContainer = styled(PageContainer)`
         props.left ? "flex-start"
         : props.right ? "flex-end"
         : "center"
-    };;
+    };
     flex-direction: column;
     text-align: ${props => 
         props.left ? "left"
