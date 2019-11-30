@@ -11,7 +11,7 @@ const About = () => {
             <GridItem about>
                 <div>
                     <h2>
-                        About Me
+                        About
                         <hr/>
                     </h2>
                 </div>
