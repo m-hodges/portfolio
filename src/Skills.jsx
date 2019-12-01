@@ -14,10 +14,6 @@ import { ReactComponent as HTMLIcon } from './icons/HTML-5-01.svg'
 import { ReactComponent as CSSIcon } from './icons/CSS-3-01.svg'
 import { ReactComponent as SassIcon } from './icons/Sass-01.svg'
 
-// import { ReactComponent as JSIcon } from './icons/JavaScript-logo.svg'
-// import { ReactComponent as TSIcon } from './icons/typescriptlang-icon.svg'
-// import { ReactComponent as ReactIcon } from './icons/react-1.svg'
-
 class Skills extends Component {
     state = {
         iconDisplayed: false
