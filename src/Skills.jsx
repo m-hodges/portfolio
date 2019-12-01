@@ -4,10 +4,12 @@ import {
     PageFlexContainer
 } from './styles/styled_components/Containers'
 import { ReactComponent as JSIcon } from './icons/JavaScript-logo.svg'
+import { ReactComponent as TSIcon } from './icons/typescriptlang-icon.svg'
 
 class Skills extends Component {
     state = {
         jsIconDisplayed: false,
+        tsIconDisplayed: false,
         iconDisplayed: false
     }
 
@@ -21,10 +23,17 @@ class Skills extends Component {
         }
         else if (this.state.iconDisplayed) {
             const currentState = Object.entries(this.state)
-            const entries = currentState.forEach(
-                element => element[1] = false
+            const entries = currentState.map(
+                element => {
+                    element[1] = false;
+                    return [
+                        element[0],
+                        element[1]
+                    ]
+                }
             )
             const newState = Object.fromEntries(entries)
+            console.log(currentIcon)
             this.setState(newState)
             //may need to be in a callback as set state is async
             this.setState({
@@ -54,6 +63,9 @@ class Skills extends Component {
                     <div className="skills--icons">
                         <button style={{padding: 0}} onClick={this.clickHandler} name='jsIcon'>
                             <JSIcon className="skills--icon"/>
+                        </button>
+                        <button style={{padding: 0}} onClick={this.clickHandler} name='tsIcon'>
+                            <TSIcon className="skills--icon"/>
                         </button>
                     </div>
                 </div>
