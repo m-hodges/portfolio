@@ -52,27 +52,35 @@ class Skills extends Component {
         return (
             <PageFlexContainer right id='skillsPage'>
                 <div className="skills">
-                    <h2 className="skills--title">
-                        Skills
-                        <hr />
-                    </h2>
-                    <p> 
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras orci diam, aliquet porttitor viverra ac, congue et purus. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam aliquam augue in sodales rhoncus. Proin vitae leo sit amet mi pulvinar varius in ac turpis. Sed pretium eros rhoncus, tristique augue id, dignissim dolor.
-                    </p>
-                    <div className="skills--icons">
-                        <button style={{padding: 0}} onClick={this.clickHandler} name='jsIcon'>
-                            <JSIcon className="skills--icon"/>
-                        </button>
-                        <button style={{padding: 0}} onClick={this.clickHandler} name='tsIcon'>
-                            <TSIcon className="skills--icon"/>
-                        </button>
-                        <button style={{padding: 0}} onClick={this.clickHandler} name='reactIcon'>
-                            <ReactIcon className="skills--icon"/>
-                        </button>
+                    <div className="skills--content">
+                        <h2 className="skills--title">
+                            Skills
+                            <hr />
+                        </h2>
+                        <p> 
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras orci diam, aliquet porttitor viverra ac, congue et purus. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam aliquam augue in sodales rhoncus. Proin vitae leo sit amet mi pulvinar varius in ac turpis. Sed pretium eros rhoncus, tristique augue id, dignissim dolor.
+                        </p>
+                        <div className="skills--icons">
+                            <button style={{padding: 0}} onClick={this.clickHandler} name='jsIcon'>
+                                <JSIcon className="skills--icon"/>
+                            </button>
+                            <button style={{padding: 0}} onClick={this.clickHandler} name='tsIcon'>
+                                <TSIcon className="skills--icon"/>
+                            </button>
+                            <button style={{padding: 0}} onClick={this.clickHandler} name='reactIcon'>
+                                <ReactIcon className="skills--icon"/>
+                            </button>
+                        </div>
                     </div>
                     <div className="skills--info">
-
+                        {this.state.iconDisplayed && 
+                            <p className="skills--info__text">
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc molestie est quam, at dapibus arcu blandit et. In sit amet est accumsan, dignissim sapien at, bibendum nulla.
+                            </p>
+                        }
                     </div>
+                    {/* ideally would like the info text to line up perfectly with the main text content */}
+                    {/* need restructure of main grid container for this to happen and have perfectly aligned components with about page */}
                 </div>
             </PageFlexContainer>
         )
