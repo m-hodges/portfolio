@@ -5,11 +5,10 @@ import {
 } from './styles/styled_components/Containers'
 import { ReactComponent as JSIcon } from './icons/JavaScript-logo.svg'
 import { ReactComponent as TSIcon } from './icons/typescriptlang-icon.svg'
+import { ReactComponent as ReactIcon } from './icons/react-1.svg'
 
 class Skills extends Component {
     state = {
-        jsIconDisplayed: false,
-        tsIconDisplayed: false,
         iconDisplayed: false
     }
 
@@ -49,7 +48,7 @@ class Skills extends Component {
     }
 
 
-    render(){
+    render() {
         return (
             <PageFlexContainer right id='skillsPage'>
                 <div className="skills">
@@ -67,6 +66,12 @@ class Skills extends Component {
                         <button style={{padding: 0}} onClick={this.clickHandler} name='tsIcon'>
                             <TSIcon className="skills--icon"/>
                         </button>
+                        <button style={{padding: 0}} onClick={this.clickHandler} name='reactIcon'>
+                            <ReactIcon className="skills--icon"/>
+                        </button>
+                    </div>
+                    <div className="skills--info">
+
                     </div>
                 </div>
             </PageFlexContainer>
