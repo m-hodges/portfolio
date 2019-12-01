@@ -3,9 +3,20 @@ import React, { Component } from 'react';
 import { 
     PageFlexContainer
 } from './styles/styled_components/Containers'
-import { ReactComponent as JSIcon } from './icons/JavaScript-logo.svg'
-import { ReactComponent as TSIcon } from './icons/typescriptlang-icon.svg'
-import { ReactComponent as ReactIcon } from './icons/react-1.svg'
+
+import { ReactComponent as JSIcon } from './icons/JavaScript-01.svg'
+import { ReactComponent as TSIcon } from './icons/Typescript-02.svg'
+import { ReactComponent as ReactIcon } from './icons/React-01.svg'
+import { ReactComponent as NodeIcon } from './icons/Node-JS-01.svg'
+import { ReactComponent as CSharpIcon } from './icons/C-Sharp-01.svg'
+import { ReactComponent as DbIcon } from './icons/Database-01.svg'
+import { ReactComponent as HTMLIcon } from './icons/HTML-5-01.svg'
+import { ReactComponent as CSSIcon } from './icons/CSS-3-01.svg'
+import { ReactComponent as SassIcon } from './icons/Sass-01.svg'
+
+// import { ReactComponent as JSIcon } from './icons/JavaScript-logo.svg'
+// import { ReactComponent as TSIcon } from './icons/typescriptlang-icon.svg'
+// import { ReactComponent as ReactIcon } from './icons/react-1.svg'
 
 class Skills extends Component {
     state = {
@@ -69,6 +80,24 @@ class Skills extends Component {
                             </button>
                             <button style={{padding: 0}} onClick={this.clickHandler} name='reactIcon'>
                                 <ReactIcon className="skills--icon"/>
+                            </button>
+                            <button style={{padding: 0}} onClick={this.clickHandler} name='nodeIcon'>
+                                <NodeIcon className="skills--icon"/>
+                            </button>
+                            <button style={{padding: 0}} onClick={this.clickHandler} name='csharpIcon'>
+                                <CSharpIcon className="skills--icon"/>
+                            </button>
+                            <button style={{padding: 0}} onClick={this.clickHandler} name='dbIcon'>
+                                <DbIcon className="skills--icon"/>
+                            </button>
+                            <button style={{padding: 0}} onClick={this.clickHandler} name='htmlIcon'>
+                                <HTMLIcon className="skills--icon"/>
+                            </button>
+                            <button style={{padding: 0}} onClick={this.clickHandler} name='cssIcon'>
+                                <CSSIcon className="skills--icon"/>
+                            </button>
+                            <button style={{padding: 0}} onClick={this.clickHandler} name='sassIcon'>
+                                <SassIcon className="skills--icon"/>
                             </button>
                         </div>
                     </div>
