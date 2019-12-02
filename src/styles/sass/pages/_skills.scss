@@ -18,7 +18,10 @@
     }
     &--title {
         margin: 0;
-        grid-area: title;
+        &__container {
+            margin: 0;
+            grid-area: title;
+        }
     }
     &--info {
         grid-area: info;
@@ -51,5 +54,4 @@
         height: 100%;
         width: 100%;
     }
-
 }
