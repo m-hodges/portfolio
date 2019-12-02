@@ -1,5 +1,6 @@
 import React from 'react';
 
+import Project from './Project'
 import { PageFlexContainer } from './styles/styled_components/Containers'
 
 const Projects = () => {
@@ -9,6 +10,9 @@ const Projects = () => {
                 Projects
                 <hr />
             </h2>
+            <div>
+                <Project />
+            </div>
         </PageFlexContainer>
     );
 };
