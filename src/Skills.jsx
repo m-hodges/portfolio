@@ -68,31 +68,31 @@ class Skills extends Component {
                             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras orci diam, aliquet porttitor viverra ac, congue et purus. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam aliquam augue in sodales rhoncus. Proin vitae leo sit amet mi pulvinar varius in ac turpis. Sed pretium eros rhoncus, tristique augue id, dignissim dolor.
                         </p>
                         <div className="skills--icons">
-                            <button style={{padding: 0}} onClick={this.clickHandler} name='jsIcon'>
+                            <button className="skills--button" onClick={this.clickHandler} name='jsIcon'>
                                 <JSIcon className="skills--icon"/>
                             </button>
-                            <button style={{padding: 0}} onClick={this.clickHandler} name='tsIcon'>
+                            <button className="skills--button" onClick={this.clickHandler} name='tsIcon'>
                                 <TSIcon className="skills--icon"/>
                             </button>
-                            <button style={{padding: 0}} onClick={this.clickHandler} name='reactIcon'>
+                            <button className="skills--button" onClick={this.clickHandler} name='reactIcon'>
                                 <ReactIcon className="skills--icon"/>
                             </button>
-                            <button style={{padding: 0}} onClick={this.clickHandler} name='nodeIcon'>
+                            <button className="skills--button" onClick={this.clickHandler} name='nodeIcon'>
                                 <NodeIcon className="skills--icon"/>
                             </button>
-                            <button style={{padding: 0}} onClick={this.clickHandler} name='csharpIcon'>
+                            <button className="skills--button" onClick={this.clickHandler} name='csharpIcon'>
                                 <CSharpIcon className="skills--icon"/>
                             </button>
-                            <button style={{padding: 0}} onClick={this.clickHandler} name='dbIcon'>
+                            <button className="skills--button" onClick={this.clickHandler} name='dbIcon'>
                                 <DbIcon className="skills--icon"/>
                             </button>
-                            <button style={{padding: 0}} onClick={this.clickHandler} name='htmlIcon'>
+                            <button className="skills--button" onClick={this.clickHandler} name='htmlIcon'>
                                 <HTMLIcon className="skills--icon"/>
                             </button>
-                            <button style={{padding: 0}} onClick={this.clickHandler} name='cssIcon'>
+                            <button className="skills--button" onClick={this.clickHandler} name='cssIcon'>
                                 <CSSIcon className="skills--icon"/>
                             </button>
-                            <button style={{padding: 0}} onClick={this.clickHandler} name='sassIcon'>
+                            <button className="skills--button" onClick={this.clickHandler} name='sassIcon'>
                                 <SassIcon className="skills--icon"/>
                             </button>
                         </div>

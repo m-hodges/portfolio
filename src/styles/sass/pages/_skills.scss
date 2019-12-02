@@ -20,17 +20,6 @@
         margin: 0;
         grid-area: title;
     }
-    &--icons {
-        grid-area: icons;
-        display: flex;
-        justify-content: space-between;
-        flex-direction: row-reverse;
-    }
-    &--icon {
-        height: 50px;
-        width: 50px;
-        fill: gray;
-    }
     &--info {
         grid-area: info;
         display: flex;
@@ -43,4 +32,24 @@
             border-right: 2px solid #1E1E1E;
         }
     }
+    &--icons {
+        grid-area: icons;
+        display: flex;
+        justify-content: space-between;
+        flex-direction: row-reverse;
+    }
+    &--button {
+        padding: 0;
+        height: 50px;
+        width: 50px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        cursor: pointer;
+    }
+    &--icon {
+        height: 100%;
+        width: 100%;
+    }
+
 }
