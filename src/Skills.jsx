@@ -59,43 +59,44 @@ class Skills extends Component {
         return (
             <PageFlexContainer right id='skillsPage'>
                 <div className="skills">
-                    <div className="skills--content">
+                    <div className="skills--title__container">
                         <h2 className="skills--title">
                             Skills
                             <hr />
                         </h2>
-                        <p> 
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras orci diam, aliquet porttitor viverra ac, congue et purus. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam aliquam augue in sodales rhoncus. Proin vitae leo sit amet mi pulvinar varius in ac turpis. Sed pretium eros rhoncus, tristique augue id, dignissim dolor.
-                        </p>
-                        <div className="skills--icons">
-                            <button style={{padding: 0}} onClick={this.clickHandler} name='jsIcon'>
-                                <JSIcon className="skills--icon"/>
-                            </button>
-                            <button style={{padding: 0}} onClick={this.clickHandler} name='tsIcon'>
-                                <TSIcon className="skills--icon"/>
-                            </button>
-                            <button style={{padding: 0}} onClick={this.clickHandler} name='reactIcon'>
-                                <ReactIcon className="skills--icon"/>
-                            </button>
-                            <button style={{padding: 0}} onClick={this.clickHandler} name='nodeIcon'>
-                                <NodeIcon className="skills--icon"/>
-                            </button>
-                            <button style={{padding: 0}} onClick={this.clickHandler} name='csharpIcon'>
-                                <CSharpIcon className="skills--icon"/>
-                            </button>
-                            <button style={{padding: 0}} onClick={this.clickHandler} name='dbIcon'>
-                                <DbIcon className="skills--icon"/>
-                            </button>
-                            <button style={{padding: 0}} onClick={this.clickHandler} name='htmlIcon'>
-                                <HTMLIcon className="skills--icon"/>
-                            </button>
-                            <button style={{padding: 0}} onClick={this.clickHandler} name='cssIcon'>
-                                <CSSIcon className="skills--icon"/>
-                            </button>
-                            <button style={{padding: 0}} onClick={this.clickHandler} name='sassIcon'>
-                                <SassIcon className="skills--icon"/>
-                            </button>
-                        </div>
+                        {/* minor bug: whitespace separating header from content is not exact match to the about sections' whitespace */}
+                    </div>
+                    <p className="skills--content"> 
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras orci diam, aliquet porttitor viverra ac, congue et purus. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam aliquam augue in sodales rhoncus. Proin vitae leo sit amet mi pulvinar varius in ac turpis. Sed pretium eros rhoncus, tristique augue id, dignissim dolor.
+                    </p>
+                    <div className="skills--icons">
+                        <button className="skills--button" onClick={this.clickHandler} name='jsIcon'>
+                            <JSIcon className="skills--icon"/>
+                        </button>
+                        <button className="skills--button" onClick={this.clickHandler} name='tsIcon'>
+                            <TSIcon className="skills--icon"/>
+                        </button>
+                        <button className="skills--button" onClick={this.clickHandler} name='reactIcon'>
+                            <ReactIcon className="skills--icon"/>
+                        </button>
+                        <button className="skills--button" onClick={this.clickHandler} name='nodeIcon'>
+                            <NodeIcon className="skills--icon"/>
+                        </button>
+                        <button className="skills--button" onClick={this.clickHandler} name='csharpIcon'>
+                            <CSharpIcon className="skills--icon"/>
+                        </button>
+                        <button className="skills--button" onClick={this.clickHandler} name='dbIcon'>
+                            <DbIcon className="skills--icon"/>
+                        </button>
+                        <button className="skills--button" onClick={this.clickHandler} name='htmlIcon'>
+                            <HTMLIcon className="skills--icon"/>
+                        </button>
+                        <button className="skills--button" onClick={this.clickHandler} name='cssIcon'>
+                            <CSSIcon className="skills--icon"/>
+                        </button>
+                        <button className="skills--button" onClick={this.clickHandler} name='sassIcon'>
+                            <SassIcon className="skills--icon"/>
+                        </button>
                     </div>
                     <div className="skills--info">
                         {this.state.iconDisplayed && 
