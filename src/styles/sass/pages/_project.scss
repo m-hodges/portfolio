@@ -46,6 +46,15 @@
         }
         &__icons {
             grid-area: icons;
+            display: flex;
+            justify-content: flex-end;
+            align-items: center;
+            margin-right: 15px;
+        }
+        &__icon {
+            color: white;
+            cursor: pointer;
+            transform: rotate(180deg);
         }
     }
 }

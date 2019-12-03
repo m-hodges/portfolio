@@ -1,5 +1,7 @@
 import React, { Component } from 'react'
 
+import ExpandMoreIcon from '@material-ui/icons/ExpandMore';
+
 export default class Project extends Component {
     render () {
         return (
@@ -16,6 +18,10 @@ export default class Project extends Component {
                         </p>
                     </div>
                     <div className="project--info__icons">
+                        <ExpandMoreIcon fontSize='large' className='project--info__icon'/>
+                        <ExpandMoreIcon fontSize='large' className='project--info__icon'/>
+                        <ExpandMoreIcon fontSize='large' className='project--info__icon'/>
+
                     </div>
                 </div>
             </div>
