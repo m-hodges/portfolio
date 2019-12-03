@@ -1,7 +1,8 @@
 .project {
     width: 50vw;
     height: 35vh;
-    background-color: pink;
+    background-image: url('https://images.unsplash.com/photo-1461532257246-777de18cd58b?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=755&q=80');
+    filter: grayscale(100%);
     display: flex;
     align-items: flex-end;
     position: relative;
@@ -26,6 +27,7 @@
             flex-direction: column;
             justify-content: center;
             align-items: flex-start;
+            text-align: left;
             margin-left: 15px;
         }
         &__title {
