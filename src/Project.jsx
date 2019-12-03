@@ -10,7 +10,7 @@ export default class Project extends Component {
                         <h3 className="project--info__title">ChatWell</h3>
                         <p className="project--info__content">
                             <em>
-                                NodeJs, React, Redux, Express, SQLite3, Socket.io
+                                NodeJs, React, Redux, Express, SQLite3, Socket.io, Styled Components
                             </em>
                             {/* set up truncation script */}
                         </p>

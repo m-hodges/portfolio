@@ -29,6 +29,9 @@
             align-items: flex-start;
             text-align: left;
             margin-left: 15px;
+            overflow: hidden;
+            white-space: nowrap;
+            text-overflow: ellipsis;
         }
         &__title {
             font-size: 20px;
@@ -38,6 +41,7 @@
         &__content {
             font-size: 14px;
             margin: 0;
+            // min-width: 0px;
             color: white;
         }
         &__icons {
