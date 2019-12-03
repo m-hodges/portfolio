@@ -20,6 +20,9 @@
         display: grid;
         grid-template-columns: 75% auto;
         grid-template-areas: 'info icons';
+        &__large {
+            height: 35vh;
+        }
         &__banner {
             width: 100%;
             background-color: gray;
@@ -38,8 +41,11 @@
             text-align: left;
             margin-left: 15px;
             overflow: hidden;
-            white-space: nowrap;
+            // white-space: nowrap;
             text-overflow: ellipsis;
+            &__large {
+
+            }
         }
         &__title {
             font-size: 20px;
