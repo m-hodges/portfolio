@@ -5,14 +5,14 @@ import ExpandMoreIcon from '@material-ui/icons/ExpandMore';
 export default class Project extends Component {
     render () {
         return (
-            <div className="project">
+            <div className="project" style={{backgroundImage: `url(${this.props.image})`}}>
                 <div className='project--info__banner'></div>
                 <div className="project--info">
                     <div className="project--info__container">
-                        <h3 className="project--info__title">ChatWell</h3>
+                        <h3 className="project--info__title">{this.props.title}</h3>
                         <p className="project--info__content">
                             <em>
-                                NodeJs, React, Redux, Express, SQLite3, Socket.io, Styled Components
+                                {this.props.stack}
                             </em>
                             {/* set up truncation script */}
                         </p>
@@ -21,7 +21,6 @@ export default class Project extends Component {
                         <ExpandMoreIcon fontSize='large' className='project--info__icon'/>
                         <ExpandMoreIcon fontSize='large' className='project--info__icon'/>
                         <ExpandMoreIcon fontSize='large' className='project--info__icon'/>
-
                     </div>
                 </div>
             </div>
