@@ -6,6 +6,7 @@ import Home from './Home'
 import About from './About'
 import Skills from './Skills'
 import Projects from './Projects'
+import Footer from './Footer'
 
 import './styles/sass/_app.scss'
 
@@ -17,6 +18,7 @@ function App() {
       < About />
       < Skills />
       < Projects />
+      < Footer />
     </>
   );
 }

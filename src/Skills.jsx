@@ -105,8 +105,6 @@ class Skills extends Component {
                             </p>
                         }
                     </div>
-                    {/* ideally would like the info text to line up perfectly with the main text content */}
-                    {/* need restructure of main grid container for this to happen and have perfectly aligned components with about page */}
                 </div>
             </PageFlexContainer>
         )

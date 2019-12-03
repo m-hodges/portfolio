@@ -1,0 +1,25 @@
+.footer {
+    height: 15vh;
+    width: 100vw;
+    margin-top: 10vh;
+    background-color: #1E1E1E;
+    @include centerFlexContainer(row);
+    &--container {
+        width: 15vw;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    &--icon {
+        color: white;
+        &:hover {
+            color: gray;
+            & ~ .footer--text {
+                display: inline-block;
+            }
+        }
+    }
+    &--text {
+        display: none;
+    }
+}

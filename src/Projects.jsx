@@ -7,7 +7,7 @@ import data from './data.js'
 
 const Projects = () => {
     return (
-        <PageFlexContainer style={{justifyContent: 'flex-start'}}>
+        <PageFlexContainer style={{justifyContent: 'flex-start', height: 'auto'}}>
             <h2>
                 Projects
                 <hr />
