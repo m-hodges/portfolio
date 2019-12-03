@@ -9,8 +9,8 @@ const Footer = () => {
     return (
         <div className='footer'>
             <div className='footer--container'>
-                <a href="https://github.com/m-hodges" target="_blank" rel="noopener noreferrer">
-                    <GitHubIcon className='footer--icon' style={{fontSize: '31px'}}/>
+                <a className='footer--icon' href="https://github.com/m-hodges" target="_blank" rel="noopener noreferrer">
+                    <GitHubIcon style={{fontSize: '31px'}}/>
                     <p className='footer--text'>Github</p>
                 </a>
                 <a href="https://www.linkedin.com/in/michael-hodges-124089b4" target="_blank" rel="noopener noreferrer">

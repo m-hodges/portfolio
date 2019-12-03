@@ -12,14 +12,18 @@
     }
     &--icon {
         color: white;
+        position: relative;
         &:hover {
-            color: gray;
-            & ~ .footer--text {
-                display: inline-block;
+            & .footer--text {
+                display: block;
             }
         }
     }
     &--text {
         display: none;
+        margin: 0;
+        padding: 0;
+        font-size: 10px;
+        position: absolute;
     }
 }
