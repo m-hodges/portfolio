@@ -19,7 +19,11 @@ export default class Project extends Component {
         return (
             <div className="project" style={{backgroundImage: `url(${this.props.image})`}}>
                 {/* on mouse over image, turn grayscale filter down and maybe zoom slowly? */}
-                <div className='project--info__banner'></div>
+                {
+                    (!this.state.isVisible) 
+                    ? <div className='project--info__banner'></div>
+                    : <div className='project--info__banner project--info__banner__large'></div>
+                }
                 <div className="project--info">
                     <div className="project--info__container">
                         <h3 className="project--info__title">{this.props.title}</h3>
