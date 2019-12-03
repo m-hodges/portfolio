@@ -18,6 +18,7 @@ export default class Project extends Component {
     render () {
         return (
             <div className="project" style={{backgroundImage: `url(${this.props.image})`}}>
+                {/* on mouse over image, turn grayscale filter down and maybe zoom slowly? */}
                 <div className='project--info__banner'></div>
                 <div className="project--info">
                     <div className="project--info__container">
