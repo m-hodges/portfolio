@@ -18,7 +18,6 @@ export default class Project extends Component {
     render () {
         return (
             <div className="project" style={{backgroundImage: `url(${this.props.image})`}}>
-                {/* on mouse over image, turn grayscale filter down and maybe zoom slowly? */}
                 {
                     (!this.state.isVisible) 
                     ? 
