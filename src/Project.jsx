@@ -27,18 +27,11 @@ export default class Project extends Component {
                         <div className="project--info">
                             <div className="project--info__container">
                                 <h3 className="project--info__title">{this.props.title}</h3>
-                                <p className="project--info__content">
-                                    <em>
-                                        {this.props.stack}
-                                    </em>
-                                    {/* set up truncation script */}
-                                </p>
-                                {
-                                    this.state.isVisible && 
-                                    <p>
-                                        {this.props.description}
+                                    <p className="project--info__content project--info__content__truncated">
+                                        <em>
+                                            {this.props.stack}
+                                        </em>
                                     </p>
-                                }
                             </div>
                             <div className="project--info__icons">
                                 <button style={{padding: '0'}} onClick={this.clickHandler}>
@@ -63,7 +56,6 @@ export default class Project extends Component {
                                     <em>
                                         {this.props.stack}
                                     </em>
-                                    {/* set up truncation script */}
                                 </p>
                                 {
                                     this.state.isVisible && 
@@ -86,7 +78,6 @@ export default class Project extends Component {
                         </div>
                     </>
                 }
-                
             </div>
         )
     }
