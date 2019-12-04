@@ -23,16 +23,20 @@
         display: grid;
         grid-template-columns: 75% auto;
         grid-template-areas: 'info icons';
+        transition: height 0.5s;
         &__large {
             height: 35vh;
+            transition: height 0.5s;
         }
         &__banner {
             width: 100%;
             background-color: gray;
             height: 10vh;
             opacity: 75%;
+            transition: height 0.5s;
             &__large {
                 height: 35vh;
+                transition: height 0.5s;
             }
         }
         &__container {
@@ -43,7 +47,6 @@
             align-items: flex-start;
             text-align: left;
             margin-left: 15px;
-
         }
         &__title {
             font-size: 20px;
