@@ -35,6 +35,11 @@ export default class Project extends Component {
                 infoContainer: infoContainer,
                 infoContent: `${infoContent} ${infoContent}__truncated`,
             })
+            // setTimeout(() => {
+            //     this.setState({
+            //         isVisible: false
+            //     })
+            // }, 350)
         }
     }
 
