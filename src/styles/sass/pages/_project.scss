@@ -64,6 +64,9 @@
                 min-width: 0;
                 max-width: 100%;
             }
+            &__description {
+                margin-top: 25px;
+            }
         }
         &__icons {
             grid-area: icons;

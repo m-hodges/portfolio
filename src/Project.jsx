@@ -35,11 +35,6 @@ export default class Project extends Component {
                 infoContainer: infoContainer,
                 infoContent: `${infoContent} ${infoContent}__truncated`,
             })
-            // setTimeout(() => {
-            //     this.setState({
-            //         isVisible: false
-            //     })
-            // }, 350)
         }
     }
 
@@ -57,7 +52,7 @@ export default class Project extends Component {
                             </p>
                             {
                                 this.state.isVisible && 
-                                <p className="project--info__content">
+                                <p className="project--info__content project--info__content__description">
                                     | &nbsp; {this.props.description}
                                 </p>
                             }
