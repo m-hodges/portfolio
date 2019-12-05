@@ -2,7 +2,7 @@
     height: 15vh;
     width: 100vw;
     margin-top: 10vh;
-    background-color: #1E1E1E;
+    background-color: $body-font-color;
     @include centerFlexContainer(row);
     &--container {
         width: 15vw;
@@ -11,7 +11,7 @@
         align-items: center;
     }
     &--icon {
-        color: white;
+        color: $alt-heading-font-color;
         position: relative;
         &:hover {
             & .footer--text {

@@ -30,7 +30,7 @@
         }
         &__banner {
             width: 100%;
-            background-color: gray;
+            background-color: #B5B6B5;
             height: 10vh;
             opacity: 75%;
             transition: height 0.5s;
@@ -51,12 +51,12 @@
         &__title {
             font-size: 20px;
             margin: 0;
-            color: white;
+            color: $alt-heading-font-color;
         }
         &__content {
             font-size: 14px;
             margin: 0;
-            color: white;
+            color: $alt-body-font-color;
             &__truncated {
                 overflow: hidden;
                 white-space: nowrap;
@@ -73,7 +73,7 @@
             margin-right: 15px;
         }
         &__icon {
-            color: white;
+            color: $alt-heading-font-color;
             &__flipped {
                 transform: rotate(180deg);
             }

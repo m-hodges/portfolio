@@ -16,8 +16,7 @@ h2 {
 }
 
 p {
-    font-family: $body-font-stack;
-    font-size: 24px;
+    @include body;
 }
 
 a {
@@ -28,8 +27,8 @@ a {
 hr {
     margin: 0;
     border: none;
-    color: #1E1E1E;
-    background-color: #1E1E1E;
+    color: $heading-font-color;
+    background-color: $heading-font-color;
     height: 2px;
 }
 
