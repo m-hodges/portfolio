@@ -8,6 +8,7 @@ const info = 'project--info';
 const infoBanner = 'project--info__banner';
 const infoContainer = 'project--info__container';
 const infoContent = 'project--info__content';
+const icon = 'project--info__icon';
 
 export default class Project extends Component {
     state = {
@@ -16,6 +17,7 @@ export default class Project extends Component {
         infoBanner: infoBanner,
         infoContainer: infoContainer,
         infoContent: `${infoContent} ${infoContent}__truncated`,
+        icon: `${icon} ${icon}__flipped`
     }
 
     clickHandler = () => {
@@ -26,6 +28,7 @@ export default class Project extends Component {
                 infoBanner: `${this.state.infoBanner} ${this.state.infoBanner}__large`,
                 infoContainer: `${this.state.infoContainer} ${this.state.infoContainer}__large`,
                 infoContent: infoContent,
+                icon: icon
             })
         } else {
             this.setState({
@@ -34,6 +37,7 @@ export default class Project extends Component {
                 infoBanner: infoBanner,
                 infoContainer: infoContainer,
                 infoContent: `${infoContent} ${infoContent}__truncated`,
+                icon: `${icon} ${icon}__flipped`
             })
         }
     }
@@ -59,7 +63,7 @@ export default class Project extends Component {
                     </div>
                     <div className="project--info__icons">
                         <button style={{padding: '0'}} onClick={this.clickHandler}>
-                            <ExpandMoreIcon style={{fontSize: '35px'}} className='project--info__icon project--info__icon__flipped'/>
+                            <ExpandMoreIcon style={{fontSize: '35px'}} className={this.state.icon}/>
                         </button>
                         <a href={this.props.github} target="_blank" rel="noopener noreferrer">
                             <GitHubIcon style={{fontSize: '32px'}} className='project--info__icon'/>

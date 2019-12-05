@@ -80,6 +80,9 @@
             &__flipped {
                 transform: rotate(180deg);
             }
+            &:hover {
+                color: #1E1E1E;
+            }
         }
     }
 }
