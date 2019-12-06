@@ -3,7 +3,6 @@ import styled from 'styled-components'
 const PageContainer = styled.div`
     width: 100vm;
     height: 100vh;
-    background-color: #F8F9FC
 `
 
 const PageFlexContainer = styled(PageContainer)`
