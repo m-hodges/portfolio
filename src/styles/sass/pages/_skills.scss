@@ -40,6 +40,9 @@
         display: flex;
         justify-content: space-between;
         flex-direction: row-reverse;
+        &:hover {
+            color: #ECEDE8;
+        }
     }
     &--button {
         padding: 0;
