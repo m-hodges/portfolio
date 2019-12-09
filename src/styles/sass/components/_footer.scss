@@ -2,10 +2,16 @@
     height: 15vh;
     width: 100vw;
     margin-top: 10vh;
+    padding-right: 2vw;
+    padding-bottom: 1vh;
     background-color: $body-font-color;
-    @include centerFlexContainer(row);
+    // @include centerFlexContainer(row);
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: flex-end;
     &--container {
-        width: 15vw;
+        width: 10vw;
         display: flex;
         justify-content: space-between;
         align-items: center;
@@ -13,11 +19,12 @@
     &--icon {
         color: $alt-heading-font-color;
         position: relative;
-        &:hover {
-            & .footer--text {
-                display: block;
-            }
-        }
+        // &:hover {
+        //     color: #ECEDE8;
+        //     & .footer--text {
+        //         display: block;
+        //     }
+        // }
     }
     &--text {
         display: none;
@@ -25,6 +32,7 @@
         padding: 0;
         font-size: 12px;
         position: absolute;
+        color: #ECEDE8;
         &__container {
             display: flex;
             justify-content: center;
