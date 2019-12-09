@@ -1,8 +1,9 @@
 .skills {
     display: grid;
     justify-content: flex-end;
+    align-content: center;
     grid-template-columns: 30vw 50vw;
-    grid-template-rows: 12.5vh 40vh 12.5vh;
+    grid-template-rows: 12.5vh 30vh 12.5vh;
     grid-template-areas: 
         '. title'
         'info content'
@@ -21,6 +22,9 @@
         &__container {
             margin: 0;
             grid-area: title;
+            display: flex;
+            justify-content: flex-end;
+            align-items: flex-end;
         }
     }
     &--info {
