@@ -11,11 +11,12 @@ import Footer from './Footer'
 import './styles/sass/_app.scss'
 
 function App() {
+  const aboutRef = React.createRef()
   return (
     <>
       < CssBaseline />
-      < Home />
-      < About />
+      < Home ref={aboutRef} />
+      < About ref={aboutRef} />
       < Skills />
       < Projects />
       < Footer />

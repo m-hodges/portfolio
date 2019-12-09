@@ -3,6 +3,10 @@
     height: 50vh;
     // overflow: hidden;
     margin: 0 0 0 10vw;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
     &--title {
         margin: 0;
     }
