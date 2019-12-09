@@ -64,7 +64,6 @@ class Skills extends Component {
                             Skills
                             <hr />
                         </h2>
-                        {/* minor bug: whitespace separating header from content is not exact match to the about sections' whitespace */}
                     </div>
                     <p className="skills--content"> 
                         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras orci diam, aliquet porttitor viverra ac, congue et purus. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam aliquam augue in sodales rhoncus. Proin vitae leo sit amet mi pulvinar varius in ac turpis. Sed pretium eros rhoncus, tristique augue id, dignissim dolor.
