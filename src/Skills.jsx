@@ -57,7 +57,7 @@ class Skills extends Component {
 
     render() {
         return (
-            <PageFlexContainer right id='skillsPage'>
+            <PageFlexContainer right>
                 <div className="skills">
                     <div className="skills--title__container">
                         <h2 className="skills--title">
