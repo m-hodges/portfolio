@@ -19,12 +19,12 @@
     &--icon {
         color: $alt-heading-font-color;
         position: relative;
-        // &:hover {
-        //     color: #ECEDE8;
-        //     & .footer--text {
-        //         display: block;
-        //     }
-        // }
+        &:hover {
+            color: #ECEDE8;
+            // & .footer--text {
+            //     display: block;
+            // }
+        }
     }
     &--text {
         display: none;
