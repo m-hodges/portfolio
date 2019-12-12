@@ -47,9 +47,6 @@
         display: flex;
         justify-content: space-between;
         flex-direction: row-reverse;
-        &:hover {
-            color: #ECEDE8;
-        }
     }
     &--button {
         padding: 0;
@@ -62,5 +59,10 @@
     &--icon {
         height: 100%;
         width: 100%;
+        filter: grayscale(75%);
+        &:hover {
+            filter: none;
+            transform: scale(1.25);
+        }
     }
 }

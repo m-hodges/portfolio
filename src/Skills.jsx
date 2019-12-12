@@ -1,4 +1,4 @@
-import React, { Component } from 'react';
+import React, { Component } from 'react'
 
 import { 
     PageFlexContainer
@@ -35,7 +35,7 @@ class Skills extends Component {
             const content = data.skills.filter((skill) => (
                 skill.technology === currentIcon
             ))
-            //may need to be in a callback as set state is async
+            //set state async but works when not in callback and doesn't work when in it?
             this.setState({
                 [currentIcon]: true,
                 iconDisplayed: true,
@@ -87,4 +87,4 @@ class Skills extends Component {
     }
 }
 
-export default Skills;
+export default Skills
