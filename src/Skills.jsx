@@ -4,6 +4,8 @@ import {
     PageFlexContainer
 } from './styles/styled_components/Containers'
 
+import data from './data.js'
+
 import { ReactComponent as JSIcon } from './icons/JavaScript-01.svg'
 import { ReactComponent as TSIcon } from './icons/Typescript-02.svg'
 import { ReactComponent as ReactIcon } from './icons/React-01.svg'
@@ -69,7 +71,14 @@ class Skills extends Component {
                         I am a full-stack web developer and am thus confident in my skills with technologies involved in both front-end and back-end, with my main areas of expertise currently being React and Node.js. I am also in the process of upskilling my knowledge of back-end technologies by learning C# and the .NET framework, and exploring further implementations of JavaScript like TypeScript.
                     </p>
                     <div className="skills--icons">
-                        <button className="skills--button" onClick={this.clickHandler} name='jsIcon'>
+                        {data.skills.map((skill, i) => (
+                            <button className='skills--button' onClick={this.clickHandler} name={skill.technology}>
+                                <img src='/src/icons/js.png' alt="" className='skills--icon'/>
+
+                                {/* <img src={`icons/${skill.icon}`} alt="" className='skills--icon'/> */}
+                            </button>
+                        ))}
+                        {/* <button className="skills--button" onClick={this.clickHandler} name='jsIcon'>
                             <JSIcon className="skills--icon"/>
                         </button>
                         <button className="skills--button" onClick={this.clickHandler} name='tsIcon'>
@@ -95,7 +104,7 @@ class Skills extends Component {
                         </button>
                         <button className="skills--button" onClick={this.clickHandler} name='sassIcon'>
                             <SassIcon className="skills--icon"/>
-                        </button>
+                        </button> */}
                     </div>
                     <div className="skills--info">
                         {this.state.iconDisplayed && 
