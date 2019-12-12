@@ -22,7 +22,7 @@ class Skills extends Component {
     }
 
     clickHandler = (evt) => {
-        const currentIcon = `${evt.currentTarget.name}Displayed`
+        const currentIcon = evt.currentTarget.name
         if (this.state.iconDisplayed && this.state[currentIcon]) {
             this.setState({
                 [currentIcon]: false,
@@ -41,17 +41,24 @@ class Skills extends Component {
                 }
             )
             const newState = Object.fromEntries(entries)
-            console.log(currentIcon)
             this.setState(newState)
+            const content = data.skills.filter((skill, i) => (
+                skill.technology === currentIcon
+            ))
             //may need to be in a callback as set state is async
             this.setState({
                 [currentIcon]: true,
-                iconDisplayed: true
+                iconDisplayed: true,
+                content: content[0].description
             })
         } else {
+            const content = data.skills.filter((skill, i) => (
+                skill.technology === currentIcon
+            ))
             this.setState({
                 [currentIcon]: true,
-                iconDisplayed: true
+                iconDisplayed: true,
+                content: content[0].description
             })
         }
     }
@@ -72,42 +79,17 @@ class Skills extends Component {
                     </p>
                     <div className="skills--icons">
                         {data.skills.map((skill, i) => (
+                            <>
                             <button className='skills--button' onClick={this.clickHandler} name={skill.technology} key={i}>
                                 <img src={`./icons/${skill.icon}`} alt={`${skill.technology} icon`} className='skills--icon'/>
                             </button>
+                            </>
                         ))}
-                        {/* <button className="skills--button" onClick={this.clickHandler} name='jsIcon'>
-                            <JSIcon className="skills--icon"/>
-                        </button>
-                        <button className="skills--button" onClick={this.clickHandler} name='tsIcon'>
-                            <TSIcon className="skills--icon"/>
-                        </button>
-                        <button className="skills--button" onClick={this.clickHandler} name='reactIcon'>
-                            <ReactIcon className="skills--icon"/>
-                        </button>
-                        <button className="skills--button" onClick={this.clickHandler} name='nodeIcon'>
-                            <NodeIcon className="skills--icon"/>
-                        </button>
-                        <button className="skills--button" onClick={this.clickHandler} name='csharpIcon'>
-                            <CSharpIcon className="skills--icon"/>
-                        </button>
-                        <button className="skills--button" onClick={this.clickHandler} name='dbIcon'>
-                            <DbIcon className="skills--icon"/>
-                        </button>
-                        <button className="skills--button" onClick={this.clickHandler} name='htmlIcon'>
-                            <HTMLIcon className="skills--icon"/>
-                        </button>
-                        <button className="skills--button" onClick={this.clickHandler} name='cssIcon'>
-                            <CSSIcon className="skills--icon"/>
-                        </button>
-                        <button className="skills--button" onClick={this.clickHandler} name='sassIcon'>
-                            <SassIcon className="skills--icon"/>
-                        </button> */}
                     </div>
                     <div className="skills--info">
                         {this.state.iconDisplayed && 
                             <p className="skills--info__text">
-                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc molestie est quam, at dapibus arcu blandit et. In sit amet est accumsan, dignissim sapien at, bibendum nulla.
+                                {this.state.content}
                             </p>
                         }
                     </div>
@@ -118,3 +100,34 @@ class Skills extends Component {
 }
 
 export default Skills;
+
+
+//legacy:
+// eslint-disable-next-line
+{/* <button className="skills--button" onClick={this.clickHandler} name='jsIcon'>
+    <JSIcon className="skills--icon"/>
+</button>
+<button className="skills--button" onClick={this.clickHandler} name='tsIcon'>
+    <TSIcon className="skills--icon"/>
+</button>
+<button className="skills--button" onClick={this.clickHandler} name='reactIcon'>
+    <ReactIcon className="skills--icon"/>
+</button>
+<button className="skills--button" onClick={this.clickHandler} name='nodeIcon'>
+    <NodeIcon className="skills--icon"/>
+</button>
+<button className="skills--button" onClick={this.clickHandler} name='csharpIcon'>
+    <CSharpIcon className="skills--icon"/>
+</button>
+<button className="skills--button" onClick={this.clickHandler} name='dbIcon'>
+    <DbIcon className="skills--icon"/>
+</button>
+<button className="skills--button" onClick={this.clickHandler} name='htmlIcon'>
+    <HTMLIcon className="skills--icon"/>
+</button>
+<button className="skills--button" onClick={this.clickHandler} name='cssIcon'>
+    <CSSIcon className="skills--icon"/>
+</button>
+<button className="skills--button" onClick={this.clickHandler} name='sassIcon'>
+    <SassIcon className="skills--icon"/>
+</button> */}
