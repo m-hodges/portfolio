@@ -6,16 +6,6 @@ import {
 
 import data from './data.js'
 
-// import { ReactComponent as JSIcon } from './icons/JavaScript-01.svg'
-// import { ReactComponent as TSIcon } from './icons/Typescript-02.svg'
-// import { ReactComponent as ReactIcon } from './icons/React-01.svg'
-// import { ReactComponent as NodeIcon } from './icons/Node-JS-01.svg'
-// import { ReactComponent as CSharpIcon } from './icons/C-Sharp-01.svg'
-// import { ReactComponent as DbIcon } from './icons/Database-01.svg'
-// import { ReactComponent as HTMLIcon } from './icons/HTML-5-01.svg'
-// import { ReactComponent as CSSIcon } from './icons/CSS-3-01.svg'
-// import { ReactComponent as SassIcon } from './icons/Sass-01.svg'
-
 class Skills extends Component {
     state = {
         iconDisplayed: false
@@ -42,7 +32,7 @@ class Skills extends Component {
             )
             const newState = Object.fromEntries(entries)
             this.setState(newState)
-            const content = data.skills.filter((skill, i) => (
+            const content = data.skills.filter((skill) => (
                 skill.technology === currentIcon
             ))
             //may need to be in a callback as set state is async
@@ -52,7 +42,7 @@ class Skills extends Component {
                 content: content[0].description
             })
         } else {
-            const content = data.skills.filter((skill, i) => (
+            const content = data.skills.filter((skill) => (
                 skill.technology === currentIcon
             ))
             this.setState({
@@ -79,11 +69,9 @@ class Skills extends Component {
                     </p>
                     <div className="skills--icons">
                         {data.skills.map((skill, i) => (
-                            <>
                             <button className='skills--button' onClick={this.clickHandler} name={skill.technology} key={i}>
                                 <img src={`./icons/${skill.icon}`} alt={`${skill.technology} icon`} className='skills--icon'/>
                             </button>
-                            </>
                         ))}
                     </div>
                     <div className="skills--info">
@@ -100,34 +88,3 @@ class Skills extends Component {
 }
 
 export default Skills;
-
-
-//legacy:
-// eslint-disable-next-line
-{/* <button className="skills--button" onClick={this.clickHandler} name='jsIcon'>
-    <JSIcon className="skills--icon"/>
-</button>
-<button className="skills--button" onClick={this.clickHandler} name='tsIcon'>
-    <TSIcon className="skills--icon"/>
-</button>
-<button className="skills--button" onClick={this.clickHandler} name='reactIcon'>
-    <ReactIcon className="skills--icon"/>
-</button>
-<button className="skills--button" onClick={this.clickHandler} name='nodeIcon'>
-    <NodeIcon className="skills--icon"/>
-</button>
-<button className="skills--button" onClick={this.clickHandler} name='csharpIcon'>
-    <CSharpIcon className="skills--icon"/>
-</button>
-<button className="skills--button" onClick={this.clickHandler} name='dbIcon'>
-    <DbIcon className="skills--icon"/>
-</button>
-<button className="skills--button" onClick={this.clickHandler} name='htmlIcon'>
-    <HTMLIcon className="skills--icon"/>
-</button>
-<button className="skills--button" onClick={this.clickHandler} name='cssIcon'>
-    <CSSIcon className="skills--icon"/>
-</button>
-<button className="skills--button" onClick={this.clickHandler} name='sassIcon'>
-    <SassIcon className="skills--icon"/>
-</button> */}
