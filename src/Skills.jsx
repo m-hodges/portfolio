@@ -66,7 +66,7 @@ class Skills extends Component {
                         </h2>
                     </div>
                     <p className="skills--content"> 
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras orci diam, aliquet porttitor viverra ac, congue et purus. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam aliquam augue in sodales rhoncus. Proin vitae leo sit amet mi pulvinar varius in ac turpis. Sed pretium eros rhoncus, tristique augue id, dignissim dolor.
+                        I am a full-stack web developer and am thus confident in my skills with technologies involved in both front-end and back-end, with my main areas of expertise currently being React and Node.js. I am also in the process of upskilling my knowledge of back-end technologies by learning C# and the .NET framework, and exploring further implementations of JavaScript like TypeScript.
                     </p>
                     <div className="skills--icons">
                         <button className="skills--button" onClick={this.clickHandler} name='jsIcon'>

@@ -17,7 +17,7 @@ export default {
             image: 'https://images.unsplash.com/photo-1525538182201-02cd1909effb?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=667&q=80'
         },
         {
-            title: 'Portfolio',
+            title: 'Portfolio (WIP)',
             stack: 'React, SASS/SCSS, Styled Components',
             description: 'This project itself, I have aimed for a simple and elegant theme and a clean, crisp user experience. The functionality of this project itself is very minimal, focusing purely on front-end, so I intend to use this as a display of my front-end skills, with future improvements planned to include entirely new themes to further show these off.',
             github: 'https://github.com/m-hodges/portfolio',
