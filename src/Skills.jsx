@@ -6,15 +6,15 @@ import {
 
 import data from './data.js'
 
-import { ReactComponent as JSIcon } from './icons/JavaScript-01.svg'
-import { ReactComponent as TSIcon } from './icons/Typescript-02.svg'
-import { ReactComponent as ReactIcon } from './icons/React-01.svg'
-import { ReactComponent as NodeIcon } from './icons/Node-JS-01.svg'
-import { ReactComponent as CSharpIcon } from './icons/C-Sharp-01.svg'
-import { ReactComponent as DbIcon } from './icons/Database-01.svg'
-import { ReactComponent as HTMLIcon } from './icons/HTML-5-01.svg'
-import { ReactComponent as CSSIcon } from './icons/CSS-3-01.svg'
-import { ReactComponent as SassIcon } from './icons/Sass-01.svg'
+// import { ReactComponent as JSIcon } from './icons/JavaScript-01.svg'
+// import { ReactComponent as TSIcon } from './icons/Typescript-02.svg'
+// import { ReactComponent as ReactIcon } from './icons/React-01.svg'
+// import { ReactComponent as NodeIcon } from './icons/Node-JS-01.svg'
+// import { ReactComponent as CSharpIcon } from './icons/C-Sharp-01.svg'
+// import { ReactComponent as DbIcon } from './icons/Database-01.svg'
+// import { ReactComponent as HTMLIcon } from './icons/HTML-5-01.svg'
+// import { ReactComponent as CSSIcon } from './icons/CSS-3-01.svg'
+// import { ReactComponent as SassIcon } from './icons/Sass-01.svg'
 
 class Skills extends Component {
     state = {
@@ -72,10 +72,8 @@ class Skills extends Component {
                     </p>
                     <div className="skills--icons">
                         {data.skills.map((skill, i) => (
-                            <button className='skills--button' onClick={this.clickHandler} name={skill.technology}>
-                                <img src='/src/icons/js.png' alt="" className='skills--icon'/>
-
-                                {/* <img src={`icons/${skill.icon}`} alt="" className='skills--icon'/> */}
+                            <button className='skills--button' onClick={this.clickHandler} name={skill.technology} key={i}>
+                                <img src={`./icons/${skill.icon}`} alt={`${skill.technology} icon`} className='skills--icon'/>
                             </button>
                         ))}
                         {/* <button className="skills--button" onClick={this.clickHandler} name='jsIcon'>

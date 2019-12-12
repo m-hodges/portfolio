@@ -42,32 +42,32 @@ export default {
             description: 'This is my front-end framework of choice due to its rapid speed and the single page web application philosophy it runs on, as well as reusable components allowing for rapid construction of professional front-ends that provide a smooth user experience. I am also familiar with Redux for state management, though am also interested to see where newer features like Hooks can be used to implement this more natively.'
         },
         {
-            techonology: 'Node',
+            technology: 'Node',
             icon: 'node.png',
             description: 'Due to my proficiency in JavaScript I naturally currently use Node on the back-end, with Express as the framework of choice for REST routes here.'
         },
         {
-            techonology: 'C#',
+            technology: 'C#',
             icon: 'csharp.png',
             description: 'I am currently upskilling to a dedicated back-end language in order to expand what I can do here, especially to do with multi-threaded workloads. I am also learning the .Net framework and will be implementing this stack in my next project.'
         },
         {
-            techonology: 'Databases',
+            technology: 'Databases',
             icon: 'databases.png',
             description: 'I have experience with both relational and non-relational databases, although my preference lies on the relational side due to the extra peace of mind their strict structuring can give when scalability may be of concern. I am proficient with SQLite3 and the Knex query builder, with some experience with PostGreSQL as well. On the non-relational side, I have some experience with MongoDB.'
         },
         {
-            techonology: 'HTML5',
+            technology: 'HTML5',
             icon: 'html.png',
             description: 'I am proficient with the latest standards of HTML5, ensuring the use of semantic HTML to keep web pages screen-reader friendly. I also have experience with templating technologies like Handlebars and EJS that help to unlock the potential of HTML web pages.'
         },
         {
-            techonology: 'CSS3',
+            technology: 'CSS3',
             icon: 'css.png',
             description: 'Flexbox, Grid, CSS transitions and animations, I ensure to incorporate these all wherever necessary to create smooth and intuitive user experiences. While I also have experience with popular libraries like Bootstrap and Semantic UI, I do prefer to create my own styling from scratch.'
         },
         {
-            techonology: 'SASS',
+            technology: 'SASS',
             icon: 'sass.png',
             description: 'I absolutely adore SASS and love the way it completely modularizes the experience of writing your own custom stylesheets. I use this in every project now, conforming to the BEM standard to keep class-names logical and easy to read for anyone else that may need to look at my code. I am currently working on my own personal library of container classes that I will be able to use over and over again in upcoming projects.'
         }
