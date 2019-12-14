@@ -70,20 +70,22 @@
             transform: scale(1.25);
         }
     }
-    // &--image {
-    //     height: 200px;
-    //     width: 2000px;
-    //     opacity: 0.2;
+    &--image {
+        // height: 200px;
+        // width: 2000px;
+        // opacity: 0.2;
 
 
-    //     animation: slide 15s linear infinite;
-    //     &__container {
-    //         grid-area: image;
-    //         width: 100%;
-    //         overflow: hidden;
-    //         display: flex;
-    //         align-items: center;
-    //         justify-content: center;
-    //     }
-    // }
+        // animation: slide 15s linear infinite;
+        &__container {
+            grid-area: image;
+            width: 100%;
+            overflow: hidden;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background-image: url('/images/seperate-26985.png');
+            background-repeat: repeat-x;
+        }
+    }
 }
