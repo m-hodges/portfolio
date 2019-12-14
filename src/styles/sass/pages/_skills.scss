@@ -6,7 +6,7 @@
     grid-template-rows: 12.5vh 30vh 12.5vh;
     grid-template-areas: 
         '. title'
-        '. content'
+        'image content'
         '. icons'
         '. info';
     grid-gap: 0px 20px;
@@ -70,4 +70,20 @@
             transform: scale(1.25);
         }
     }
+    // &--image {
+    //     height: 200px;
+    //     width: 2000px;
+    //     opacity: 0.2;
+
+
+    //     animation: slide 15s linear infinite;
+    //     &__container {
+    //         grid-area: image;
+    //         width: 100%;
+    //         overflow: hidden;
+    //         display: flex;
+    //         align-items: center;
+    //         justify-content: center;
+    //     }
+    // }
 }
