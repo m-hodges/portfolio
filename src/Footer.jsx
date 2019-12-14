@@ -21,7 +21,7 @@ const Footer = () => {
                         <p className='footer--text'>LinkedIn</p>
                     </div>
                 </a>
-                <a className='footer--icon' href="/other/mhodges_cv.pdf" target="_blank" rel="noopener noreferrer">
+                <a className='footer--icon' href="/other/m-hodges-cv.pdf" target="_blank" rel="noopener noreferrer">
                     <DescriptionIcon style={{fontSize: '35px'}} />
                     <div className='footer--text__container'>
                         <p className='footer--text'>CV</p>
