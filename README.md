@@ -1,1 +1,1 @@
-# https://m-hodges.com
+# http://m-hodges.com
