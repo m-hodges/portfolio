@@ -2,7 +2,6 @@ import React from 'react'
 
 import GitHubIcon from '@material-ui/icons/GitHub';
 import LinkedInIcon from '@material-ui/icons/LinkedIn';
-import DescriptionIcon from '@material-ui/icons/Description';
 import EmailIcon from '@material-ui/icons/Email';
 
 const Footer = () => {
@@ -19,12 +18,6 @@ const Footer = () => {
                     <LinkedInIcon style={{fontSize: '40px'}} />
                     <div className='footer--text__container'>
                         <p className='footer--text'>LinkedIn</p>
-                    </div>
-                </a>
-                <a className='footer--icon' href="/other/m-hodges-cv.pdf" target="_blank" rel="noopener noreferrer">
-                    <DescriptionIcon style={{fontSize: '35px'}} />
-                    <div className='footer--text__container'>
-                        <p className='footer--text'>CV</p>
                     </div>
                 </a>
                 <a className='footer--icon' href="mailto: michaelcshodges@gmail.com" target="_blank" rel="noopener noreferrer">
