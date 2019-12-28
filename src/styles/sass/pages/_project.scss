@@ -28,8 +28,9 @@
             height: 35vh;
             transition: height 0.5s;
             overflow-y: auto;
-            scrollbar-color: #1E1E1E #B5B6B5;
+            scrollbar-color: $alt-heading-font-color rgba(181, 182, 181, 0.1);
             scrollbar-width: thin;
+            padding: 5px 0px;
         }
         &__banner {
             width: 100%;
@@ -91,11 +92,13 @@
     }
 }
 
-@media (min-width: 700px) and (max-width: 1300px) {
-    .project--info__content {
+@media (min-width: 700px) and (max-width: 1250px) {
+    .project--info {
+        &__content {
         font-size: 14px;
-        &__description {
-            margin-top: 10px;
+            &__description {
+                margin-top: 10px;
+            }
         }
     }
 }
