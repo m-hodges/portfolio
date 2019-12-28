@@ -5,7 +5,7 @@ import ExpandMoreIcon from '@material-ui/icons/ExpandMore';
 import { PageFlexContainer } from './styles/styled_components/Containers'
 
 const scrollToRef = (ref) => window.scrollTo(0, ref.current.offsetTop)
-const windowWidth = window.screen.width
+// const windowWidth = window.screen.width
 
 const Home = React.forwardRef((props, ref) => {
     const executeScroll = () => scrollToRef(ref)
@@ -13,9 +13,9 @@ const Home = React.forwardRef((props, ref) => {
         <PageFlexContainer>
             <div className='spacer'></div>
             <div className="title">
-                <h1 className="title--text">Functional</h1>
+                <h1 className="title--text title--text__fn"></h1>
                 <h1 className="title--text__center"> | </h1>
-                <h1 className="title--text">Innovative</h1>
+                <h1 className="title--text title--text__in"></h1>
             </div>
             <div className='subtitle'>
                 <p className='subtitle--text subtitle--text__main'>

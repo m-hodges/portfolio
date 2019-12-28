@@ -71,3 +71,8 @@ button {
 }
 
 //mobile breakpoints
+@media (max-width: 699px) {
+    h1 {
+        @include heading (900, 50px);
+    }
+}

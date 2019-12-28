@@ -9,6 +9,16 @@
             font-weight: 700;
             margin: 0vh 4vw 4vh 4vw;
         }
+        &__fn {
+            &::after {
+                content: "Functional";
+            }
+        }
+        &__in {
+            &::after {
+                content: "Innovative";
+            }
+        }
     }
 }
 
@@ -42,12 +52,17 @@
     color: gray;
 }
 
-// .about {
-//     font-family: Roboto;
-//     font-size: 12px;
-//     font-weight: 500;
-// }
-
-@media (max-width: 700px) {
-
+@media (max-width: 550px) {
+    .title--text {
+        &__fn {
+            &::after {
+                content: "Fn";
+            }
+        }
+        &__in {
+            &::after {
+                content: "In";
+            }
+        }
+    }
 }
