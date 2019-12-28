@@ -13,7 +13,7 @@
         filter: none;
         background-size: 110%;
         transform: scale(1.05);
-;    }
+    }
     &--info {
         width: 100%;
         height: 10vh;
@@ -84,6 +84,15 @@
             &:hover {
                 color: #ECEDE8;
             }
+        }
+    }
+}
+
+@media (min-width: 700px) and (max-width: 1300px) {
+    .project--info__content {
+        font-size: 14px;
+        &__description {
+            margin-top: 10px;
         }
     }
 }
