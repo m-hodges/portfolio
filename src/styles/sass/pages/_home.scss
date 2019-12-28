@@ -57,11 +57,13 @@
         &__fn {
             &::after {
                 content: "Fn";
+                font-size: 64px;
             }
         }
         &__in {
             &::after {
                 content: "In";
+                font-size: 64px;
             }
         }
     }

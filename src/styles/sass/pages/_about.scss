@@ -13,6 +13,7 @@
         height: 350px;
         width: 350px;
         animation: rotate 100s linear infinite;
+        margin: 0 10vw 0 0;
         opacity: 0.3;
         &__container {
             display: flex;
@@ -27,6 +28,15 @@
     }
 }
 
+@media (max-width: 1000px) {
+    .about {
+        margin: 0 0 0 5vw;
+        &--image {
+            margin: 0 5vw 0 0;
+        }
+    }
+}
+
 @media (max-width: 699px) {
     .about {
         width: 100vw;
@@ -37,10 +47,11 @@
             opacity: 0.2;
             height: 400px;
             width: 400px;
+            margin: 0;
             &__container {
                 position: absolute;
                 z-index: -1;
-                transform: translate(50%, 20%);
+                transform: translate(50%, 50%);
             }
         }
     }
