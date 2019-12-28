@@ -116,4 +116,11 @@
     .project--info {
         grid-template-columns: 65% auto;
     }
+    .project {
+        background-size: 110%;
+        &:hover {
+            filter: none;
+            transform: scale(1);
+        }
+    }
 }
