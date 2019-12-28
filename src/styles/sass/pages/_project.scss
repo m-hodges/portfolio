@@ -27,6 +27,9 @@
         &__large {
             height: 35vh;
             transition: height 0.5s;
+            overflow-y: auto;
+            scrollbar-color: #1E1E1E #B5B6B5;
+            scrollbar-width: thin;
         }
         &__banner {
             width: 100%;
