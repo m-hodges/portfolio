@@ -9,7 +9,7 @@
         'image content'
         '. icons'
         '. info';
-    grid-gap: 0px 20px;
+    grid-gap: 40px 20px;
     width: 100vw;
     height: 75vh;
     margin: 0 10vw 0 0;
@@ -86,4 +86,11 @@
     //         justify-content: center;
     //     }
     // }
+}
+
+@media  (min-width: 700px) and (max-width: 1000px) {
+    .skills--icon {
+        height: 90%;
+        width: 90%;
+    }
 }
