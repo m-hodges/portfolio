@@ -26,3 +26,31 @@
         display: flex;
     }
 }
+
+@media (max-width: 699px) {
+    .about {
+        width: 100vw;
+        height: 75vh;
+        position: relative;
+        margin: 0 10vw 0 10vw;
+        &--image {
+            opacity: 0.2;
+            height: 400px;
+            width: 400px;
+            &__container {
+                position: absolute;
+                z-index: -1;
+                transform: translate(50%, 20%);
+            }
+        }
+    }
+}
+
+@media (max-width: 400px) {
+    .about {
+        &--image {
+            height: 350px;
+            width: 350px;
+        }
+    }
+}

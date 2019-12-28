@@ -21,7 +21,6 @@ const About = React.forwardRef((props, ref) => {
                         <img src="/images/images_clip-art_Angelo_Gemmi_Angelo_Gemmi_geometric_motif.png" alt="about" className='about--image'/>
                 </div>
             </div>
-
         </PageFlexContainer>
     )
 })

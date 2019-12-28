@@ -92,7 +92,10 @@
     }
 }
 
-@media (min-width: 700px) and (max-width: 1250px) {
+@media (max-width: 1250px) {
+    .project {
+        width: 75vw;
+    }
     .project--info {
         &__content {
         font-size: 14px;
@@ -100,5 +103,17 @@
                 margin-top: 10px;
             }
         }
+    }
+}
+
+@media (max-width: 699px) {
+    .project {
+        width: 90vw;
+    }
+}
+
+@media (max-width: 500px) {
+    .project--info {
+        grid-template-columns: 65% auto;
     }
 }
