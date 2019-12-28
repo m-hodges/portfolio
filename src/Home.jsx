@@ -5,6 +5,7 @@ import ExpandMoreIcon from '@material-ui/icons/ExpandMore';
 import { PageFlexContainer } from './styles/styled_components/Containers'
 
 const scrollToRef = (ref) => window.scrollTo(0, ref.current.offsetTop)
+const windowWidth = window.screen.width
 
 const Home = React.forwardRef((props, ref) => {
     const executeScroll = () => scrollToRef(ref)
