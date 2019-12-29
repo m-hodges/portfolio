@@ -35,5 +35,5 @@
     ]
   },
   "devDependencies": {},
-  "proxy": "http://localhot:8080"
+  "proxy": "http://localhost:8080"
 }

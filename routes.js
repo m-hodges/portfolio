@@ -5,7 +5,7 @@ const router = express.Router()
 
 module.exports = router
 
-router.get('/', (req, res) => {
-    console.log('hit / get route')
-    res.sendFile(path.join(__dirname + '/build/index.html'))
+router.get('*', (req, res) => {
+    console.log('hit the server')
+    res.redirect('https://' + req.headers.host + req.url)
 })
