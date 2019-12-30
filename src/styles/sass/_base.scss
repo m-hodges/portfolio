@@ -75,4 +75,7 @@ button {
     h1 {
         @include heading (900, 50px);
     }
+    p {
+        font-size: 20px;
+    }
 }
