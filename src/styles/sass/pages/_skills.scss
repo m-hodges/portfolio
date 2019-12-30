@@ -35,6 +35,9 @@
         align-items: flex-start;
         padding: 0px 0px 0px 10px;
         height: 20vh;
+        overflow-y: auto;
+        scrollbar-color: #1E1E1E #FAFAFA;
+        scrollbar-width: thin;
         &__text {
             padding-right: 15px;
             margin: 0;
@@ -123,9 +126,9 @@
         &--icons {
             align-items: center;
         }
-        &--info {
-            overflow-y: auto;
-        }
+        // &--info {
+        //     overflow-y: auto;
+        // }
     }
 
 }
