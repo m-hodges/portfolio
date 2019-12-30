@@ -7,5 +7,7 @@ module.exports = router
 
 router.get('*', (req, res) => {
     console.log('hit the server')
-    res.redirect('https://' + req.headers.host + req.url)
+    console.log(req.headers.host)
+    res.redirect('https://m-hodges.com')
+    // res.redirect('https://' + req.headers.host + req.url)
 })

@@ -13,8 +13,10 @@ const Home = React.forwardRef((props, ref) => {
         <PageFlexContainer>
             <div className='spacer'></div>
             <div className="title">
+                {/* eslint-disable-next-line  */}
                 <h1 className="title--text title--text__fn"></h1>
                 <h1 className="title--text__center"> | </h1>
+                {/* eslint-disable-next-line  */}
                 <h1 className="title--text title--text__in"></h1>
             </div>
             <div className='subtitle'>
