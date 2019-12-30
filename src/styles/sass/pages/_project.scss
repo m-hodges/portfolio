@@ -11,7 +11,7 @@
     transition: background-size 5s, transform 1s;
     &:hover {
         filter: none;
-        background-size: 110%;
+        // background-size: 110%;
         transform: scale(1.05);
     }
     &--info {
