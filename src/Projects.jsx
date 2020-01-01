@@ -2,6 +2,7 @@ import React from 'react';
 
 import Project from './Project'
 import { PageFlexContainer } from './styles/styled_components/Containers'
+import AnimationContainer from './AnimationContainer'
 
 import data from './data.js'
 
@@ -10,7 +11,9 @@ const Projects = () => {
         <PageFlexContainer style={{justifyContent: 'flex-start', height: 'auto'}}>
             <h2>
                 Projects
-                <hr />
+                <AnimationContainer hr>
+                    <hr />
+                </AnimationContainer>
             </h2>
             <div>
                 {data.projects.map((project, i) => (

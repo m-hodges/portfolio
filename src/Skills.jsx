@@ -3,6 +3,7 @@ import React, { Component } from 'react'
 import { 
     PageFlexContainer
 } from './styles/styled_components/Containers'
+import AnimationContainer from './AnimationContainer'
 
 import data from './data.js'
 
@@ -61,16 +62,23 @@ class Skills extends Component {
                     <div className="skills--title__container">
                         <h2 className="skills--title">
                             Skills
-                            <hr />
+                            <AnimationContainer hr>
+                                <hr />
+                            </AnimationContainer>
                         </h2>
                     </div>
                     <p className="skills--content"> 
-                        I am a full-stack web developer and am thus confident in my skills with technologies involved in both front-end and back-end, with my main areas of expertise currently being React and Node.js. I am also in the process of upskilling my knowledge of back-end technologies by learning C# and the .NET framework, and exploring further implementations of JavaScript like TypeScript.
+                        <AnimationContainer content>
+
+                            I am a full-stack web developer and am thus confident in my skills with technologies involved in both front-end and back-end, with my main areas of expertise currently being React and Node.js. I am also in the process of upskilling my knowledge of back-end technologies by learning C# and the .NET framework, and exploring further implementations of JavaScript like TypeScript.
+                        </AnimationContainer>
                     </p>
                     <div className="skills--icons">
                         {data.skills.map((skill, i) => (
                             <button className='skills--button' onClick={this.clickHandler} name={skill.technology} key={i}>
-                                <img src={`./icons/${skill.icon}`} alt={`${skill.technology} icon`} className='skills--icon'/>
+                                <AnimationContainer content>
+                                    <img src={`./icons/${skill.icon}`} alt={`${skill.technology} icon`} className='skills--icon'/>
+                                </AnimationContainer>
                             </button>
                         ))}
                     </div>
