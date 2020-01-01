@@ -24,6 +24,12 @@ const AnimationContainer = (props) => {
         }
         {
             props.content && 
+            <span ref={domRef} className={`fade-in ${isVisible ? 'fade-in--visible' : ''}`}>
+                {props.children}
+            </span>
+        }
+        {
+            props.project && 
             <div ref={domRef} className={`fade-in ${isVisible ? 'fade-in--visible' : ''}`}>
                 {props.children}
             </div>

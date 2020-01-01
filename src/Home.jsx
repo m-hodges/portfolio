@@ -3,7 +3,6 @@ import React from 'react';
 import ExpandMoreIcon from '@material-ui/icons/ExpandMore';
 
 import { PageFlexContainer } from './styles/styled_components/Containers'
-import AnimationContainer from './AnimationContainer'
 
 const scrollToRef = (ref) => window.scrollTo(0, ref.current.offsetTop)
 
