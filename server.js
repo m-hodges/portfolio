@@ -6,12 +6,7 @@ const server = express()
 
 server.use(express.static(__dirname))
 server.use(express.static(path.join(__dirname, 'build')))
-// server.use((req, res) => {
-//     if (!req.secure) {
-//         res.redirect('https://' + req.headers.host)
-//     }
-// })
-server.use('*', function(req, res, next) {
+server.use('*', (req, res, next) => {
     //replace localhost:8080 to the ip address:port of your server
     res.header("Access-Control-Allow-Origin", "https://m-hodges.com");
     res.header("Access-Control-Allow-Headers", "X-Requested-With");
@@ -20,7 +15,11 @@ server.use('*', function(req, res, next) {
     next(); 
 });
 server.options('*', cors())
-
+server.use((req, res) => {
+    if (!req.secure) {
+        res.redirect('https://' + req.headers.host)
+    }
+})
 const router = require('./routes')
 server.use('/', router)
 
