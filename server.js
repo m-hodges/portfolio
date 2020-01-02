@@ -1,6 +1,6 @@
 const express = require('express')
 const path = require('path')
-
+const cors = require('cors')
 
 const server = express()
 
@@ -19,6 +19,7 @@ server.use('*', function(req, res, next) {
     res.header('Access-Control-Allow-Credentials', true);
     next(); 
 });
+server.options('*', cors())
 
 const router = require('./routes')
 server.use('/', router)
