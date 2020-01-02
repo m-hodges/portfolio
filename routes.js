@@ -4,11 +4,11 @@ const cors = require('cors')
 
 const router = express.Router()
 
-const corsPermissions = {
-    origin: 'https://m-hodges.com'
-}
+// const corsPermissions = {
+//     origin: 'https://m-hodges.com'
+// }
 
-router.get('*', cors(corsPermissions), (req, res) => {
+router.get('*', cors(), (req, res) => {
     if (!req.secure) {
         res.redirect('https://' + req.headers.host)
     } else {
