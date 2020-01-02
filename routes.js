@@ -4,8 +4,16 @@ const cors = require('cors')
 
 const router = express.Router()
 
-router.get('*', cors(), (req, res) => {
-    res.sendFile(path.join(__dirname, 'build', 'index.html'))
+const corsPermissions = {
+    origin: 'https://m-hodges.com'
+}
+
+router.get('*', cors(corsPermissions), (req, res) => {
+    if (!req.secure) {
+        res.redirect('https://' + req.headers.host)
+    } else {
+        res.sendFile(path.join(__dirname, 'build', 'index.html'))
+    }
 })
 
 module.exports = router
