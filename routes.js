@@ -1,6 +1,6 @@
 const express = require('express')
 const path = require('path')
-const cors = require('cors')
+// const cors = require('cors')
 
 const router = express.Router()
 
@@ -8,7 +8,7 @@ const router = express.Router()
 //     origin: 'https://m-hodges.com'
 // }
 
-router.get('*', cors(), (req, res, next) => {
+router.get('*', (req, res, next) => {
     // if (!req.secure) {
     //     res.redirect('https://' + req.headers.host)
     // } else {
