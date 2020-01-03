@@ -12,6 +12,7 @@ const AnimationContainer = (props) => {
             entries.forEach(entry => setVisible(entry.isIntersecting))
         })
         observer.observe(domRef.current)
+        // eslint-disable-next-line
         return () => observer.unobserve(domRef.current)
     }, [])
     return (

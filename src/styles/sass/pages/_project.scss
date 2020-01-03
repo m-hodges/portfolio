@@ -109,18 +109,30 @@
 @media (max-width: 699px) {
     .project {
         width: 90vw;
+        transition: none;
     }
 }
 
 @media (max-width: 500px) {
-    .project--info {
-        grid-template-columns: 65% auto;
-    }
     .project {
-        background-size: 110%;
+        background-size: 150%;
+        transition: none;
         &:hover {
             filter: none;
             transform: scale(1);
+        }
+        &--info {
+            height: 75px;
+            grid-template-columns: 65% auto;
+            &__large {
+                height: 300px;
+            }
+            &__banner {
+                height: 75px;
+                &__large {
+                    height: 300px;
+                }
+            }
         }
     }
 }
