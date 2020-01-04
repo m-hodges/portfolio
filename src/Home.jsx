@@ -54,7 +54,6 @@ const Home = React.forwardRef((props, ref) => {
                             : titleText.fnText[count]
                     }
                 </h1>
-                {/* restructure so that words dont move - use grid */}
                 <h1 className="title--text__center"> | </h1>
                 <h1 className='title--text title--text__in'>
                     {
