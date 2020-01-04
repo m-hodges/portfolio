@@ -64,14 +64,9 @@
         position: relative;
         margin: 0 10vw 0 10vw;
         &--image {
-            opacity: 0.2;
-            height: 300px;
-            width: 300px;
-            margin: 0;
+            display: none;
             &__container {
-                position: absolute;
-                z-index: -1;
-                transform: translate(50%, 0%);
+                display: none;
             }
         }
     }
