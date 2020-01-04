@@ -10,57 +10,21 @@
             font-weight: 700;
             margin: 0vh 4vw 4vh 4vw;
         }
-        &__fn {
-            transition: all 1s linear;
+        // &__fn {
+        //     transition: all 1s linear;
+        //     &::after {
+        //         content: "Functional";
+        //         transition: all 1s linear;
+        //     }
+        // }
+        // &__in {
+        //     transition: all 1s linear;
+        //     &::after {
+        //         content: "Innovative";
+        //         transition: all 1s linear;
 
-            &::after {
-                content: "Functional";
-                transition: all 1s linear;
-            }
-        }
-        &__in {
-            transition: all 1s linear;
-
-            &::after {
-                content: "Innovative";
-                transition: all 1s linear;
-
-            }
-        }
-        &__fn1 {
-            transition: all 1s linear;
-
-            &::after {
-                content: "aaaaaaaaaa";
-                transition: all 1s linear;
-
-            }
-        }
-        &__in1 {
-            transition: all 1s linear;
-
-            &::after {
-                content: "aaaaaaaaaa";
-                transition: all 1s linear;
-
-            }
-        }
-        &__fn2 {
-            transition: all 1s linear;
-            &::after {
-                content: "bbbbbbbbbb";
-                transition: all 1s linear;
-
-            }
-        }
-        &__in2 {
-            transition: all 1s linear;
-            &::after {
-                content: "bbbbbbbbbb";
-                transition: all 1s linear;
-
-            }
-        }
+        //     }
+        // }
     }
 }
 
@@ -94,19 +58,19 @@
     color: gray;
 }
 
-@media (max-width: 550px) {
-    .title--text {
-        &__fn {
-            &::after {
-                content: "Fn";
-                font-size: 64px;
-            }
-        }
-        &__in {
-            &::after {
-                content: "In";
-                font-size: 64px;
-            }
-        }
-    }
-}
+// @media (max-width: 550px) {
+//     .title--text {
+//         &__fn {
+//             &::after {
+//                 content: "Fn";
+//                 font-size: 64px;
+//             }
+//         }
+//         &__in {
+//             &::after {
+//                 content: "In";
+//                 font-size: 64px;
+//             }
+//         }
+//     }
+// }
