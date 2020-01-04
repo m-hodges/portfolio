@@ -32,15 +32,15 @@ const About = React.forwardRef((props, ref) => {
                     </p>
                     </AnimationContainer>
                 </div>
-                {
-                    (windowWidth >= 1000 && windowHeight >= 500) ? 
-                        // <AnimationContainer content>
+                {/* {
+                    (windowWidth >= 1000 && windowHeight >= 500) ?  */}
+                        <AnimationContainer content>
                             <div className='about--image__container'>
                                     <img src="/images/images_clip-art_Angelo_Gemmi_Angelo_Gemmi_geometric_motif.png" alt="about" className='about--image'/>
                             </div>
-                        // {/* </AnimationContainer> */}
-                    : null
-                }
+                        </AnimationContainer>
+                    {/* : null
+                } */}
 
             </div>
         </PageFlexContainer>
