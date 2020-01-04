@@ -47,7 +47,7 @@ const Home = React.forwardRef((props, ref) => {
         <PageFlexContainer>
             <div className='spacer'></div>
             <div className="title">
-                <h1 className='title--text'>
+                <h1 className='title--text title--text__fn'>
                     {
                         (windowWidth >= 550) 
                             ? titleText.functionalText[count] 
@@ -56,7 +56,7 @@ const Home = React.forwardRef((props, ref) => {
                 </h1>
                 {/* restructure so that words dont move - use grid */}
                 <h1 className="title--text__center"> | </h1>
-                <h1 className='title--text'>
+                <h1 className='title--text title--text__in'>
                     {
                         (windowWidth >= 550) 
                             ? titleText.creativeText[count] 

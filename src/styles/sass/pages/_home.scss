@@ -1,29 +1,42 @@
 .title {
     width: 100vw;
     height: 25vh;
-    @include centerFlexContainer(row);
+    // @include centerFlexContainer(row);
+    display: grid;
+    grid-template-columns: 45vw 10vw 45vw;
     &--text {
         margin: 0;
-        // transition: all 2s linear;
+        // @include centerFlexContainer(row);
+        // transition: all 1s linear;
         &__center {
             font-size: 100px;
             font-weight: 700;
             margin: 0vh 4vw 4vh 4vw;
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: flex-end;
         }
-        // &__fn {
-        //     transition: all 1s linear;
-        //     &::after {
-        //         content: "Functional";
-        //         transition: all 1s linear;
-        //     }
-        // }
-        // &__in {
-        //     transition: all 1s linear;
-        //     &::after {
-        //         content: "Innovative";
-        //         transition: all 1s linear;
-        //     }
-        // }
+        &__fn {
+            display: flex;
+            flex-direction: row;
+            justify-content: flex-end;
+            align-items: center;
+            // &::after {
+            //     content: "Functional";
+            //     transition: all 1s linear;
+            // }
+        }
+        &__in {
+            display: flex;
+            flex-direction: row;
+            justify-content: flex-start;
+            align-items: center;
+            // &::after {
+            //     content: "Innovative";
+            //     transition: all 1s linear;
+            // }
+        }
     }
 }
 
@@ -57,19 +70,19 @@
     color: gray;
 }
 
-// @media (max-width: 550px) {
-//     .title--text {
-//         &__fn {
-//             &::after {
-//                 content: "Fn";
-//                 font-size: 64px;
-//             }
-//         }
-//         &__in {
-//             &::after {
-//                 content: "In";
-//                 font-size: 64px;
-//             }
-//         }
-//     }
-// }
+@media (max-width: 550px) {
+    .title--text {
+        &__fn {
+            font-size: 64px;
+            // &::after {
+            //     content: "Fn";
+            // }
+        }
+        &__in {
+            font-size: 64px;
+            // &::after {
+            //     content: "In";
+            // }
+        }
+    }
+}
