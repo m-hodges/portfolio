@@ -51,7 +51,27 @@
             &__container {
                 position: absolute;
                 z-index: -1;
-                transform: translate(50%, 25%);
+                transform: translate(50%, 0%);
+            }
+        }
+    }
+}
+
+@media (orientation: landscape) and (max-width: 1000px) and (max-height: 500px) {
+    .about {
+        width: 100vw;
+        height: 75vh;
+        position: relative;
+        margin: 0 10vw 0 10vw;
+        &--image {
+            opacity: 0.2;
+            height: 300px;
+            width: 300px;
+            margin: 0;
+            &__container {
+                position: absolute;
+                z-index: -1;
+                transform: translate(50%, 0%);
             }
         }
     }
