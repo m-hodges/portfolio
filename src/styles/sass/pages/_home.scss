@@ -1,21 +1,16 @@
 .title {
     width: 100vw;
     height: 25vh;
-    // @include centerFlexContainer(row);
     display: grid;
     grid-template-columns: 45vw 10vw 45vw;
     &--text {
         margin: 0;
-        // @include centerFlexContainer(row);
         // transition: all 1s linear;
         &__center {
             font-size: 100px;
             font-weight: 700;
             margin: 0vh 4vw 4vh 4vw;
-            display: flex;
-            flex-direction: row;
-            justify-content: center;
-            align-items: center;
+            @include centerFlexContainer(row);
         }
         &__fn {
             display: flex;
