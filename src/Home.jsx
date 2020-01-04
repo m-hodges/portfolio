@@ -13,7 +13,6 @@ const Home = React.forwardRef((props, ref) => {
         const randomCount = (max) => (
             Math.floor(Math.random() * Math.floor(max))
         )
-        // console.log(randomCount(3))
         const intervalTimer = setInterval(() => setCount(randomCount(3)), 3000)
         return () => clearInterval(intervalTimer)
     })
@@ -24,10 +23,22 @@ const Home = React.forwardRef((props, ref) => {
             <div className='spacer'></div>
             <div className="title">
                 {/* eslint-disable-next-line  */}
-                <h1 className="title--text title--text__fn"></h1>
+                <h1 className={
+                    `title--text 
+                        ${(count === 0) ? 'title--text__fn' 
+                        : (count === 1) ? 'title--text__fn1' 
+                        : (count === 2 ) ? 'title--text__fn2' 
+                        : null }`
+                }></h1>
                 <h1 className="title--text__center"> | </h1>
                 {/* eslint-disable-next-line  */}
-                <h1 className="title--text title--text__in"></h1>
+                <h1 className={
+                    `title--text 
+                        ${(count === 0) ? 'title--text__in' 
+                        : (count === 1) ? 'title--text__in1' 
+                        : (count === 2 ) ? 'title--text__in2' 
+                        : null }`
+                }></h1>
             </div>
             <div className='subtitle'>
                     <p className='subtitle--text subtitle--text__main'>

@@ -19,6 +19,26 @@
                 content: "Innovative";
             }
         }
+        &__fn1 {
+            &::after {
+                content: "aaaaaaaaaa";
+            }
+        }
+        &__in1 {
+            &::after {
+                content: "aaaaaaaaaa";
+            }
+        }
+        &__fn2 {
+            &::after {
+                content: "bbbbbbbbbb";
+            }
+        }
+        &__in2 {
+            &::after {
+                content: "bbbbbbbbbb";
+            }
+        }
     }
 }
 
