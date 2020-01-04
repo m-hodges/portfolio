@@ -4,39 +4,61 @@
     @include centerFlexContainer(row);
     &--text {
         margin: 0;
+        transition: all 2s linear;
         &__center {
             font-size: 100px;
             font-weight: 700;
             margin: 0vh 4vw 4vh 4vw;
         }
         &__fn {
+            transition: all 1s linear;
+
             &::after {
                 content: "Functional";
+                transition: all 1s linear;
             }
         }
         &__in {
+            transition: all 1s linear;
+
             &::after {
                 content: "Innovative";
+                transition: all 1s linear;
+
             }
         }
         &__fn1 {
+            transition: all 1s linear;
+
             &::after {
                 content: "aaaaaaaaaa";
+                transition: all 1s linear;
+
             }
         }
         &__in1 {
+            transition: all 1s linear;
+
             &::after {
                 content: "aaaaaaaaaa";
+                transition: all 1s linear;
+
             }
         }
         &__fn2 {
+            transition: all 1s linear;
             &::after {
                 content: "bbbbbbbbbb";
+                transition: all 1s linear;
+
             }
         }
         &__in2 {
+            transition: all 1s linear;
             &::after {
                 content: "bbbbbbbbbb";
+                transition: all 1s linear;
+
             }
         }
     }

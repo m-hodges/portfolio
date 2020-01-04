@@ -5,11 +5,39 @@ import ExpandMoreIcon from '@material-ui/icons/ExpandMore';
 import { PageFlexContainer } from './styles/styled_components/Containers'
 
 const scrollToRef = (ref) => window.scrollTo(0, ref.current.offsetTop)
+let windowWidth = window.innerWidth
+const titleText = {
+    functionalText: [
+        'Functional',
+        'Practical',
+        'Operative'
+    ],
+    creativeText: [
+        'Innovative',
+        'Creativity',
+        'Visionary'
+    ]
+}
+const titleTextShortened = {
+    functionalText: [
+        'Fn',
+        'Pr',
+        'Op'
+    ],
+    creativeText: [
+        'In',
+        'Cr',
+        'Vs'
+    ]
+}
 
 const Home = React.forwardRef((props, ref) => {
     const executeScroll = () => scrollToRef(ref)
     let [count, setCount] = useState(0)
     useEffect(() => {
+        window.addEventListener('resize', () => {
+            windowWidth = window.innerWidth
+        })
         const randomCount = (max) => (
             Math.floor(Math.random() * Math.floor(max))
         )
@@ -22,23 +50,21 @@ const Home = React.forwardRef((props, ref) => {
         <PageFlexContainer>
             <div className='spacer'></div>
             <div className="title">
-                {/* eslint-disable-next-line  */}
-                <h1 className={
-                    `title--text 
-                        ${(count === 0) ? 'title--text__fn' 
-                        : (count === 1) ? 'title--text__fn1' 
-                        : (count === 2 ) ? 'title--text__fn2' 
-                        : null }`
-                }></h1>
+                <h1 className='title--text'>
+                    {
+                        (windowWidth >= 550) 
+                            ? titleText.functionalText[count] 
+                            : titleTextShortened.functionalText[count]
+                    }
+                </h1>
                 <h1 className="title--text__center"> | </h1>
-                {/* eslint-disable-next-line  */}
-                <h1 className={
-                    `title--text 
-                        ${(count === 0) ? 'title--text__in' 
-                        : (count === 1) ? 'title--text__in1' 
-                        : (count === 2 ) ? 'title--text__in2' 
-                        : null }`
-                }></h1>
+                <h1 className='title--text'>
+                    {
+                        (windowWidth >= 550) 
+                            ? titleText.functionalText[count] 
+                            : titleTextShortened.functionalText[count]
+                    }
+                </h1>
             </div>
             <div className='subtitle'>
                     <p className='subtitle--text subtitle--text__main'>
