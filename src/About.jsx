@@ -1,11 +1,21 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 
 import { 
     PageFlexContainer
 } from './styles/styled_components/Containers'
 import AnimationContainer from './AnimationContainer'
 
+let windowWidth = window.innerWidth
+let windowHeight = window.innerHeight
+
 const About = React.forwardRef((props, ref) => {
+    useEffect(() => {
+        window.addEventListener('resize', () => {
+            windowWidth = window.innerWidth
+            windowHeight = window.innerHeight
+            console.log(windowHeight)
+        })
+    })
     return (
         <PageFlexContainer left ref={ref} >
             <div className='about--container'>
@@ -22,11 +32,16 @@ const About = React.forwardRef((props, ref) => {
                     </p>
                     </AnimationContainer>
                 </div>
-                <AnimationContainer content>
-                    <div className='about--image__container'>
-                            <img src="/images/images_clip-art_Angelo_Gemmi_Angelo_Gemmi_geometric_motif.png" alt="about" className='about--image'/>
-                    </div>
-                </AnimationContainer>
+                {
+                    (windowWidth >= 1000 && windowHeight >= 500) ? 
+                        // <AnimationContainer content>
+                            <div className='about--image__container'>
+                                    <img src="/images/images_clip-art_Angelo_Gemmi_Angelo_Gemmi_geometric_motif.png" alt="about" className='about--image'/>
+                            </div>
+                        // {/* </AnimationContainer> */}
+                    : null
+                }
+
             </div>
         </PageFlexContainer>
     )
