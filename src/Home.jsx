@@ -8,7 +8,7 @@ const scrollToRef = (ref) => window.scrollTo(0, ref.current.offsetTop)
 
 const Home = React.forwardRef((props, ref) => {
     const executeScroll = () => scrollToRef(ref)
-    
+
     return (
         <PageFlexContainer>
             <div className='spacer'></div>
