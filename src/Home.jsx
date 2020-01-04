@@ -48,7 +48,7 @@ const Home = React.forwardRef((props, ref) => {
     })
 
     return (
-        <PageFlexContainer>
+        <PageFlexContainer className='mobile__landscape'>
             <div className='spacer'></div>
             <div className="title">
                 <h1 className='title--text title--text__fn'>
@@ -67,6 +67,7 @@ const Home = React.forwardRef((props, ref) => {
                     }
                 </h1>
             </div>
+
             <div className={`subtitle fade-in ${isLoaded && 'fade-in--visible'}`}>
                     <p className='subtitle--text subtitle--text__main'>
                         Michael Hodges
