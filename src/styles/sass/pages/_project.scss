@@ -115,6 +115,7 @@
 
 @media (max-width: 500px) {
     .project {
+        height: 300px;
         background-size: 150%;
         transition: none;
         &:hover {
