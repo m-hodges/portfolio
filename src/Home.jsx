@@ -35,9 +35,13 @@ const titleText = {
 const Home = React.forwardRef((props, ref) => {
     const executeScroll = () => scrollToRef(ref)
     let [count, setCount] = useState(0)
+    const [isLoaded, setIsLoaded] = useState(false)
     useEffect(() => {
         window.addEventListener('resize', () => {
             windowWidth = window.innerWidth
+        })
+        window.addEventListener('load', () => {
+            setIsLoaded(true)
         })
         const intervalTimer = setInterval(() => setCount(randomCount(3)), 3000)
         return () => clearInterval(intervalTimer)
@@ -63,7 +67,7 @@ const Home = React.forwardRef((props, ref) => {
                     }
                 </h1>
             </div>
-            <div className='subtitle'>
+            <div className={`subtitle fade-in ${isLoaded && 'fade-in--visible'}`}>
                     <p className='subtitle--text subtitle--text__main'>
                         Michael Hodges
                         <hr className='subtitle--separator' />
@@ -74,9 +78,6 @@ const Home = React.forwardRef((props, ref) => {
                 <button className='continue' onClick={executeScroll}>
                     <ExpandMoreIcon fontSize='large' className='icon'/>
                 </button>
-                {/* <a href="/" className='continue' onClick={scrollToRef} >
-                        <ExpandMoreIcon fontSize='large' className='icon'/>
-                </a> */}
             </div>
         </PageFlexContainer>
     )
