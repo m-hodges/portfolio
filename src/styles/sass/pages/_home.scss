@@ -4,7 +4,7 @@
     @include centerFlexContainer(row);
     &--text {
         margin: 0;
-        transition: all 2s linear;
+        // transition: all 2s linear;
         &__center {
             font-size: 100px;
             font-weight: 700;
@@ -22,7 +22,6 @@
         //     &::after {
         //         content: "Innovative";
         //         transition: all 1s linear;
-
         //     }
         // }
     }

@@ -5,6 +5,9 @@ import ExpandMoreIcon from '@material-ui/icons/ExpandMore';
 import { PageFlexContainer } from './styles/styled_components/Containers'
 
 const scrollToRef = (ref) => window.scrollTo(0, ref.current.offsetTop)
+const randomCount = (max) => (
+    Math.floor(Math.random() * Math.floor(max))
+)
 let windowWidth = window.innerWidth
 const titleText = {
     functionalText: [
@@ -14,17 +17,15 @@ const titleText = {
     ],
     creativeText: [
         'Innovative',
-        'Creativity',
+        'Creative',
         'Visionary'
-    ]
-}
-const titleTextShortened = {
-    functionalText: [
+    ],
+    fnText: [
         'Fn',
         'Pr',
         'Op'
     ],
-    creativeText: [
+    crText: [
         'In',
         'Cr',
         'Vs'
@@ -38,13 +39,9 @@ const Home = React.forwardRef((props, ref) => {
         window.addEventListener('resize', () => {
             windowWidth = window.innerWidth
         })
-        const randomCount = (max) => (
-            Math.floor(Math.random() * Math.floor(max))
-        )
         const intervalTimer = setInterval(() => setCount(randomCount(3)), 3000)
         return () => clearInterval(intervalTimer)
     })
-
 
     return (
         <PageFlexContainer>
@@ -54,15 +51,16 @@ const Home = React.forwardRef((props, ref) => {
                     {
                         (windowWidth >= 550) 
                             ? titleText.functionalText[count] 
-                            : titleTextShortened.functionalText[count]
+                            : titleText.fnText[count]
                     }
                 </h1>
+                {/* restructure so that words dont move - use grid */}
                 <h1 className="title--text__center"> | </h1>
                 <h1 className='title--text'>
                     {
                         (windowWidth >= 550) 
-                            ? titleText.functionalText[count] 
-                            : titleTextShortened.functionalText[count]
+                            ? titleText.creativeText[count] 
+                            : titleText.crText[count]
                     }
                 </h1>
             </div>
