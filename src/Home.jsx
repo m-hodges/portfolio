@@ -34,7 +34,7 @@ const titleText = {
 
 const Home = React.forwardRef((props, ref) => {
     const executeScroll = () => scrollToRef(ref)
-    let [count, setCount] = useState(0)
+    const [count, setCount] = useState(0)
     const [isLoaded, setIsLoaded] = useState(false)
     useEffect(() => {
         window.addEventListener('resize', () => {

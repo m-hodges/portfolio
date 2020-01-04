@@ -8,10 +8,9 @@
     align-items: flex-end;
     position: relative;
     margin: 25px;
-    transition: background-size 5s, transform 1s;
+    transition: transform 1s, filter 1s;
     &:hover {
         filter: none;
-        // background-size: 110%;
         transform: scale(1.05);
     }
     &--info {
