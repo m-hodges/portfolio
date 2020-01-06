@@ -45,14 +45,16 @@
         position: relative;
         margin: 0 10vw 0 10vw;
         &--image {
-            opacity: 0.2;
-            height: 400px;
-            width: 400px;
-            margin: 0;
+            display: none;
+            // opacity: 0.2;
+            // height: 400px;
+            // width: 400px;
+            // margin: 0;
             &__container {
-                position: absolute;
-                z-index: -1;
-                transform: translate(50%, 0%);
+                display: none;
+                // position: absolute;
+                // z-index: -1;
+                // transform: translate(50%, 0%);
             }
         }
     }
@@ -76,8 +78,7 @@
 @media (max-width: 400px) {
     .about {
         &--image {
-            height: 350px;
-            width: 350px;
+            display: none;
         }
     }
 }
