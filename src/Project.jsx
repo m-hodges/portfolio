@@ -46,7 +46,7 @@ export default class Project extends Component {
 
     render () {
         return (
-            <AnimationContainer project>
+            // <AnimationContainer project>
             <div className="project" style={{backgroundImage: `url(${this.props.image})`}}>
                 <div className={this.state.infoBanner}></div>
                 <div className={this.state.info}>
@@ -77,7 +77,7 @@ export default class Project extends Component {
                     </div>
                 </div>
             </div>
-            </AnimationContainer>
+            // </AnimationContainer>
         )
     }
 }
