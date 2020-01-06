@@ -105,6 +105,24 @@
     }
 }
 
+@media (orientation: landscape) and (max-width: 1000px) and (max-height: 500px) {
+    .project {
+        height: 250px;
+        &--info {
+            height: 65px;
+            &__large {
+                height: 250px;
+            }
+            &__banner {
+                height: 65px;
+                &__large {
+                    height: 250px;
+                }
+            }
+        }
+    }
+}
+
 @media (max-width: 699px) {
     .project {
         width: 90vw;
