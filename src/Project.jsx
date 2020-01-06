@@ -59,9 +59,9 @@ export default class Project extends Component {
                             </p>
                             {
                                 this.state.isVisible && 
-                                <p className="project--info__content project--info__content__description">
-                                    | &nbsp; {this.props.description}
-                                </p>
+                                    <p className="project--info__content project--info__content__description">
+                                        | &nbsp; {this.props.description}
+                                    </p>
                             }
                     </div>
                     <div className="project--info__icons">
