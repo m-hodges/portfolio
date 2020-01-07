@@ -54,7 +54,7 @@
         }
         &-exit-active {
             opacity: 0;
-            transform: translateY(30px);
+            transform: translateY(20px);
             transition: opacity 1000ms, transform 1000ms;
         }
     }

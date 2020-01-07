@@ -37,7 +37,7 @@ const Home = React.forwardRef((props, ref) => {
     const executeScroll = () => scrollToRef(ref)
     const [count, setCount] = useState(0)
     const [isLoaded, setIsLoaded] = useState(false)
-    const [showTitle, setShowTitle] = useState(false)
+    const [showTitle, setShowTitle] = useState(true)
     useEffect(() => {
         window.addEventListener('resize', () => {
             windowWidth = window.innerWidth
@@ -45,17 +45,12 @@ const Home = React.forwardRef((props, ref) => {
         window.addEventListener('load', () => {
             setIsLoaded(true)
         })
-        setShowTitle(true)
+        setTimeout(() => setShowTitle(false), 4000)
         const intervalTimer = setInterval(() => {
-            // let newCount = randomCount(3)
-            // while(count === newCount ) {
-            //     newCount = randomCount(3)
-            // }
-            // console.log(newCount)
-            setShowTitle(true)
-            setCount(randomCount(3))
-            setTimeout(() => setShowTitle(false), 4000)
-        }
+                setShowTitle(true)
+                setCount(randomCount(3))
+                setTimeout(() => setShowTitle(false), 4000)
+            }
         , 5000)
         return () => clearInterval(intervalTimer)
     }, [])
