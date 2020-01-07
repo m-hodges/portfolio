@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from 'react';
+import { CSSTransition } from 'react-transition-group';
 
 import ExpandMoreIcon from '@material-ui/icons/ExpandMore';
 
@@ -36,6 +37,7 @@ const Home = React.forwardRef((props, ref) => {
     const executeScroll = () => scrollToRef(ref)
     const [count, setCount] = useState(0)
     const [isLoaded, setIsLoaded] = useState(false)
+    const [showTitle, setShowTitle] = useState(false)
     useEffect(() => {
         window.addEventListener('resize', () => {
             windowWidth = window.innerWidth
@@ -43,21 +45,36 @@ const Home = React.forwardRef((props, ref) => {
         window.addEventListener('load', () => {
             setIsLoaded(true)
         })
-        const intervalTimer = setInterval(() => setCount(randomCount(3)), 3000)
+        setShowTitle(true)
+        const intervalTimer = setInterval(() => {
+            setShowTitle(true)
+            setCount(randomCount(3))
+            setTimeout(() => setShowTitle(false), 2000)
+        }
+        , 3000)
         return () => clearInterval(intervalTimer)
-    })
+    }, [])
 
     return (
         <PageFlexContainer className='mobile__landscape'>
             <div className='spacer'></div>
             <div className="title">
-                <h1 className='title--text title--text__fn'> 
-                    {
-                        (windowWidth >= 550) 
-                            ? titleText.functionalText[count] 
-                            : titleText.fnText[count]
-                    }
-                </h1>
+                <CSSTransition 
+                    in={showTitle} 
+                    timeout={500}
+                    classNames="title--transitions"
+                    unmountOnExit
+                    // onEnter={() => setShowTitle(true)}
+                    // onExited={() => setShowTitle(false)}
+                >
+                    <h1 className='title--text title--text__fn'> 
+                        {
+                            (windowWidth >= 550) 
+                                ? titleText.functionalText[count] 
+                                : titleText.fnText[count]
+                        }
+                    </h1>
+                </CSSTransition>
                 <h1 className="title--text__center"> | </h1>
                 <h1 className='title--text title--text__in'>
                     {
