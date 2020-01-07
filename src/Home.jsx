@@ -35,8 +35,6 @@ const Home = React.forwardRef((props, ref) => {
         Math.floor(Math.random() * Math.floor(max))
     )
     const executeScroll = () => scrollToRef(ref)
-<<<<<<< HEAD
-=======
     const [count, setCount] = useState(0)
     const [isLoaded, setIsLoaded] = useState(false)
     const [showTitle, setShowTitle] = useState(false)
@@ -61,7 +59,6 @@ const Home = React.forwardRef((props, ref) => {
         , 5000)
         return () => clearInterval(intervalTimer)
     }, [count])
->>>>>>> bd0ea1c292e5406561aa811ac304e0a2576ae10c
 
     return (
         <PageFlexContainer className='mobile__landscape'>
