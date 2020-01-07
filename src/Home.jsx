@@ -64,8 +64,6 @@ const Home = React.forwardRef((props, ref) => {
                     timeout={500}
                     classNames="title--transitions"
                     unmountOnExit
-                    // onEnter={() => setShowTitle(true)}
-                    // onExited={() => setShowTitle(false)}
                 >
                     <h1 className='title--text title--text__fn'> 
                         {
