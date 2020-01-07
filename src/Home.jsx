@@ -51,7 +51,7 @@ const Home = React.forwardRef((props, ref) => {
         <PageFlexContainer className='mobile__landscape'>
             <div className='spacer'></div>
             <div className="title">
-                <h1 className='title--text title--text__fn'>
+                <h1 className='title--text title--text__fn'> 
                     {
                         (windowWidth >= 550) 
                             ? titleText.functionalText[count] 
@@ -69,10 +69,10 @@ const Home = React.forwardRef((props, ref) => {
             </div>
 
             <div className={`subtitle fade-in ${isLoaded && 'fade-in--visible'}`}>
-                    <p className='subtitle--text subtitle--text__main'>
+                    <div className='subtitle--text subtitle--text__main'>
                         Michael Hodges
                         <hr className='subtitle--separator' />
-                    </p>
+                    </div>
                     <p className='subtitle--text subtitle--text__sub'>Fullstack Web Developer</p>
             </div>
             <div className='spacer spacer--container'>

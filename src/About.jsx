@@ -5,7 +5,9 @@ import {
 } from './styles/styled_components/Containers'
 import AnimationContainer from './AnimationContainer'
 
+// eslint-disable-next-line
 let windowWidth = window.innerWidth
+// eslint-disable-next-line
 let windowHeight = window.innerHeight
 
 const About = React.forwardRef((props, ref) => {
@@ -13,7 +15,6 @@ const About = React.forwardRef((props, ref) => {
         window.addEventListener('resize', () => {
             windowWidth = window.innerWidth
             windowHeight = window.innerHeight
-            console.log(windowHeight)
         })
     })
     return (
