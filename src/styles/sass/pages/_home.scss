@@ -67,6 +67,7 @@
     &--text {
         margin: 0;
         &__main {
+            font-family: $body-font-stack;
             font-size: 32px;
         }
         &__sub {
