@@ -15,6 +15,7 @@ const Projects = () => {
                     <hr />
                 </AnimationContainer>
             </h2>
+            <AnimationContainer project>
             <div>
                 {data.projects.map((project, i) => (
                     < Project 
@@ -28,6 +29,7 @@ const Projects = () => {
                     />
                 ))}
             </div>
+            </AnimationContainer>
         </PageFlexContainer>
     );
 };

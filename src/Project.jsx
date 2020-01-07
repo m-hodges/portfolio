@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
 
-import AnimationContainer from './AnimationContainer'
+// import AnimationContainer from './AnimationContainer'
 
 import ExpandMoreIcon from '@material-ui/icons/ExpandMore';
 import GitHubIcon from '@material-ui/icons/GitHub';
@@ -46,7 +46,7 @@ export default class Project extends Component {
 
     render () {
         return (
-            <AnimationContainer project>
+            // <AnimationContainer project>
             <div className="project" style={{backgroundImage: `url(${this.props.image})`}}>
                 <div className={this.state.infoBanner}></div>
                 <div className={this.state.info}>
@@ -59,9 +59,9 @@ export default class Project extends Component {
                             </p>
                             {
                                 this.state.isVisible && 
-                                <p className="project--info__content project--info__content__description">
-                                    | &nbsp; {this.props.description}
-                                </p>
+                                    <p className="project--info__content project--info__content__description">
+                                        | &nbsp; {this.props.description}
+                                    </p>
                             }
                     </div>
                     <div className="project--info__icons">
@@ -77,7 +77,7 @@ export default class Project extends Component {
                     </div>
                 </div>
             </div>
-            </AnimationContainer>
+            // </AnimationContainer>
         )
     }
 }

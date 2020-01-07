@@ -5,7 +5,7 @@ import React, {
 } from 'react'
 
 const AnimationContainer = (props) => {
-    const [isVisible, setVisible] = useState(true)
+    const [isVisible, setVisible] = useState(false)
     const domRef = useRef()
     useEffect(() => {
         const observer = new IntersectionObserver(entries => {
