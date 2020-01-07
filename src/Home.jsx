@@ -5,7 +5,7 @@ import ExpandMoreIcon from '@material-ui/icons/ExpandMore';
 
 import { PageFlexContainer } from './styles/styled_components/Containers'
 
-const scrollToRef = (ref) => window.scrollTo(0, ref.current.offsetTop)
+const scrollToRef = (ref) => ref.current.scrollIntoView({behavior: 'smooth'})
 const randomCount = (max) => (
     Math.floor(Math.random() * Math.floor(max))
 )
@@ -37,7 +37,7 @@ const Home = React.forwardRef((props, ref) => {
     const executeScroll = () => scrollToRef(ref)
     const [count, setCount] = useState(0)
     const [isLoaded, setIsLoaded] = useState(false)
-    const [showTitle, setShowTitle] = useState(true)
+    const [showTitle, setShowTitle] = useState(false)
     useEffect(() => {
         window.addEventListener('resize', () => {
             windowWidth = window.innerWidth
@@ -45,6 +45,7 @@ const Home = React.forwardRef((props, ref) => {
         window.addEventListener('load', () => {
             setIsLoaded(true)
         })
+        setShowTitle(true)
         setTimeout(() => setShowTitle(false), 4000)
         const intervalTimer = setInterval(() => {
                 setShowTitle(true)

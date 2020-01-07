@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
 
-import AnimationContainer from './AnimationContainer'
+// import AnimationContainer from './AnimationContainer'
 
 import ExpandMoreIcon from '@material-ui/icons/ExpandMore';
 import GitHubIcon from '@material-ui/icons/GitHub';
