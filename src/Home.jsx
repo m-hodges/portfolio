@@ -47,11 +47,16 @@ const Home = React.forwardRef((props, ref) => {
         })
         setShowTitle(true)
         const intervalTimer = setInterval(() => {
+            // let newCount = randomCount(3)
+            // while(count === newCount ) {
+            //     newCount = randomCount(3)
+            // }
+            // console.log(newCount)
             setShowTitle(true)
             setCount(randomCount(3))
-            setTimeout(() => setShowTitle(false), 2000)
+            setTimeout(() => setShowTitle(false), 4000)
         }
-        , 3000)
+        , 5000)
         return () => clearInterval(intervalTimer)
     }, [])
 
@@ -74,13 +79,20 @@ const Home = React.forwardRef((props, ref) => {
                     </h1>
                 </CSSTransition>
                 <h1 className="title--text__center"> | </h1>
-                <h1 className='title--text title--text__in'>
-                    {
-                        (windowWidth >= 550) 
-                            ? titleText.creativeText[count] 
-                            : titleText.crText[count]
-                    }
-                </h1>
+                <CSSTransition 
+                    in={showTitle} 
+                    timeout={500}
+                    classNames="title--transitions"
+                    unmountOnExit
+                >
+                    <h1 className='title--text title--text__in'>
+                        {
+                            (windowWidth >= 550) 
+                                ? titleText.creativeText[count] 
+                                : titleText.crText[count]
+                        }
+                    </h1>
+                </CSSTransition>
             </div>
 
             <div className={`subtitle fade-in ${isLoaded && 'fade-in--visible'}`}>
