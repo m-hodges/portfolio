@@ -5,7 +5,7 @@
     transition: opacity 0.6s ease-out, transform 1.2s ease-out;
     &--visible {
         opacity: 1;
-        transform: none;
+        transform: translateY(0vh);
         visibility: visible;
     }
 }
