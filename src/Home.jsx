@@ -5,10 +5,6 @@ import ExpandMoreIcon from '@material-ui/icons/ExpandMore';
 
 import { PageFlexContainer } from './styles/styled_components/Containers'
 
-const scrollToRef = (ref) => ref.current.scrollIntoView({behavior: 'smooth'})
-const randomCount = (max) => (
-    Math.floor(Math.random() * Math.floor(max))
-)
 let windowWidth = window.innerWidth
 const titleText = {
     functionalText: [
@@ -34,6 +30,10 @@ const titleText = {
 }
 
 const Home = React.forwardRef((props, ref) => {
+    const scrollToRef = (ref) => ref.current.scrollIntoView({behavior: 'smooth'})
+    const randomCount = (max) => (
+        Math.floor(Math.random() * Math.floor(max))
+    )
     const executeScroll = () => scrollToRef(ref)
     const [count, setCount] = useState(0)
     const [isLoaded, setIsLoaded] = useState(false)
@@ -48,13 +48,17 @@ const Home = React.forwardRef((props, ref) => {
         setShowTitle(true)
         setTimeout(() => setShowTitle(false), 4000)
         const intervalTimer = setInterval(() => {
+                let newCount = randomCount(3)
+                while (count === newCount) {
+                    newCount = randomCount(3)
+                }
                 setShowTitle(true)
-                setCount(randomCount(3))
+                setCount(newCount)
                 setTimeout(() => setShowTitle(false), 4000)
             }
         , 5000)
         return () => clearInterval(intervalTimer)
-    }, [])
+    }, [count])
 
     return (
         <PageFlexContainer className='mobile__landscape'>
