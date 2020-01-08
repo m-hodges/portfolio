@@ -30,6 +30,16 @@
             scrollbar-color: $alt-heading-font-color rgba(181, 182, 181, 0.1);
             scrollbar-width: thin;
             padding: 5px 0px;
+            &::-webkit-scrollbar {
+                width: 8px;
+            }
+            &::-webkit-scrollbar-track {
+                background: rgba(181, 182, 181, 0.1);
+            }
+            &::-webkit-scrollbar-thumb {
+                background-color: $alt-heading-font-color;
+                border: 1px solid rgba(181, 182, 181, 0.1);
+            }
         }
         &__banner {
             width: 100%;
