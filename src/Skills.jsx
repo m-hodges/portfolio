@@ -36,7 +36,6 @@ class Skills extends Component {
             const content = data.skills.filter((skill) => (
                 skill.technology === currentIcon
             ))
-            //set state async but works when not in callback and doesn't work when in it?
             this.setState({
                 [currentIcon]: true,
                 iconDisplayed: true,
@@ -69,7 +68,6 @@ class Skills extends Component {
                     </div>
                     <p className="skills--content"> 
                         <AnimationContainer content>
-
                             I am a full-stack web developer and am thus confident in my skills with technologies involved in both front-end and back-end, with my main areas of expertise currently being React and Node.js. I am also in the process of upskilling my knowledge of back-end technologies by learning C# and the .NET framework, and exploring further implementations of JavaScript like TypeScript.
                         </AnimationContainer>
                     </p>
