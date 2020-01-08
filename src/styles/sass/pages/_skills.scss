@@ -36,8 +36,18 @@
         padding: 0px 0px 0px 10px;
         height: 20vh;
         overflow-y: auto;
-        scrollbar-color: #1E1E1E #FAFAFA;
+        scrollbar-color: #6A6667 #FAFAFA;
         scrollbar-width: thin;
+        &::-webkit-scrollbar {
+            width: 8px;
+        }
+        &::-webkit-scrollbar-track {
+            background: #FAFAFA;
+        }
+        &::-webkit-scrollbar-thumb {
+            background-color: #6A6667;
+            border: 1px solid #FAFAFA;
+        }
         &__text {
             padding-right: 15px;
             margin: 0;
