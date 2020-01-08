@@ -1,6 +1,16 @@
 html {
     scrollbar-color: #1E1E1E #FAFAFA;
     scrollbar-width: thin;
+    &::-webkit-scrollbar {
+        width: 8px;
+    }
+    &::-webkit-scrollbar-track {
+        background: #FAFAFA;
+    }
+    &::-webkit-scrollbar-thumb {
+        background-color: #1E1E1E;
+        border: 1px solid #FAFAFA;
+    }
 }
 
 body {
