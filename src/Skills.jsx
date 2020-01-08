@@ -87,9 +87,6 @@ class Skills extends Component {
                             </p>
                         }
                     </div>
-                    {/* <div className='skills--image__container'>
-                        <img src="/images/seperate-26985.png" alt="skills" className='skills--image'/>
-                    </div> */}
                 </div>
             </PageFlexContainer>
         )
